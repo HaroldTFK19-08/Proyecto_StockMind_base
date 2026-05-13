@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/aside.css">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/inicioAdmin.css">
+    <link rel="icon" type="image/svg+xml" href="/IMG/imgs-admin/Capa2.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Inicio Admin</title>
+</head>
+<body>
+    <aside>
+        <div class="izquierda">
+            <img src="/IMG/imgs-admin/Capa 1.svg" alt="StockMind" style="width: 160px; height: auto; padding: 20px 0;">
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li class="selected">
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/inicioAdmin.html"><i class="bi bi-house-door"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/sedesAdmin.html"><i class="bi bi-building"></i>Centros</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/inventarioAdmin.html"><i class="bi bi-box-seam"></i> Inventario</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/movimientosAdmin.html"><i class="bi bi-box-arrow-in-right"></i>Movimientos</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/ReportesAdmin.html"><i class="bi bi-file-earmark-bar-graph"></i> Reportes</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/usuariosAdmin.html"><i class="bi bi-people"></i> Usuarios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <div class="barra-buscador">
+                <input type="text" placeholder="Buscar" minlength="1" maxlength="50">
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="derecha">
+                <div class="iconos">
+                    <a href="/Paginas_Stockmind/Rol_Administrativo/notificacionesAdmin.html"><i class="bi bi-bell"></i></a>
+                    <i class="bi bi-gear"></i>
+                </div>
+                <div class="perfil">
+                    <div class="info">
+                        <span class="nombre">
+                            <p><strong>ADMIN Sena</strong></p>
+                        </span>
+                        <small>ADMIN PRINCIPAL</small>
+                    </div>
+                    <a href="/Paginas_Stockmind/Rol_Administrativo/perfilAdmin.html"><div class="avatar"></div></a>
+            </div>
+        </header>
+        <section>
+            <section>
+                <h1>Bienvenido ADMIN</h1>
+                <br>
+                <p>Gestion Eficiente del inventario y control de elementos en cada centro de formacion</p>
+            </section>
+            <section class="cards">
+                <div class="card">
+                    <div class="icono">
+                        <i class="bi bi-box"></i>
+                    </div>
+                    <div class="info">
+                        <span>ELEMENTOS TOTALES</span>
+                        <h2>2,000</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icono">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <div class="info">
+                        <span>CENTROS FORMATIVOS</span>
+                        <h2>4</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icono">
+                        <i class="bi bi-person-badge"></i>
+                    </div>
+                    <div class="info">
+                        <span>N° CUENTADANTES</span>
+                        <h2>400</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icono">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <div class="info">
+                        <span>N° APRENDICES</span>
+                        <h2>3,000</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="tabla-container">
+                <div class="tabla-header">
+                    <div class="titulo">
+                        <h3>Elementos actuales</h3>
+                        <span class="estado">ACTUALIZADO</span>
+                    </div>
+                    <div class="acciones-header">
+                        <button><i class="bi bi-funnel"></i> Filtrar</button>
+                        <button><i class="bi bi-download"></i> Exportar</button>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre del elemento</th>
+                            <th>Centro de formación</th>
+                            <th>Ambiente</th>
+                            <th>Cuenta Dante</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="id">00211</td>
+                            <td>
+                                <strong>Monitor Dell UltraSharp 27"</strong>
+                            </td>
+                            <td>Centro Comercio y Servicios</td>
+                            <td>Ambiente 201</td>
+                            <td>Carlos Mario Restrepo</td>
+                            <td class="acciones">
+                                <i class="bi bi-eye"></i>
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="id">00311</td>
+                            <td><strong>Portátil Lenovo ThinkPad P15</strong></td>
+                            <td>Centro de Teleinformatica</td>
+                            <td>Ambiente 201</td>
+                            <td>Ana María Vélez</td>
+                            <td class="acciones">
+                                <i class="bi bi-eye"></i>
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="id">0033</td>
+                            <td><strong>Multímetro Digital Fluke 179</strong></td>
+                            <td>Centro Agropecuario</td>
+                            <td>Ambiente 101</td>
+                            <td>Jorge Iván Duque</td>
+                            <td class="acciones">
+                                <i class="bi bi-eye"></i>
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="id">0033</td>
+                            <td><strong>MacBook NEO</strong></td>
+                            <td>Centro Comercio y Servicios</td>
+                            <td>Laboratorio TICS</td>
+                            <td>Andres Escobar</td>
+                            <td class="acciones">
+                                <i class="bi bi-eye"></i>
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="id">0033</td>
+                            <td><strong>Multímetro Digital Fluke 179</strong></td>
+                            <td>Centro Agropecuario</td>
+                            <td>Ambiente 101</td>
+                            <td>Diego Vargas</td>
+                            <td class="acciones">
+                                <i class="bi bi-eye"></i>
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="tabla-footer">
+                    <span>Mostrando 5 de 2,000 elementos</span>
+                    <div class="paginacion">
+                        <button class="activo">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                </div>
+            </section>    
+        </section>
+    </main>
+</body>
+</html>

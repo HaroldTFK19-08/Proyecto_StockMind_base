@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/aside.css">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/sedesAdmin.css">
+    <link rel="icon" type="image/svg+xml" href="/IMG/imgs-admin/Capa2.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Centros Admin</title>
+</head>
+<body>
+    <aside>
+        <div class="izquierda">
+            <img src="/IMG/imgs-admin/Capa 1.svg" alt="StockMind" style="width: 160px; height: auto; padding: 20px 0;">
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/inicioAdmin.html"><i class="bi bi-house-door"></i> Home</a>
+                    </li>
+                    <li class="selected">
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/sedesAdmin.html"><i class="bi bi-building"></i> Centros</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/inventarioAdmin.html"><i class="bi bi-box-seam"></i> Inventario</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/movimientosAdmin.html"><i class="bi bi-box-arrow-in-right"></i>Movimientos</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/ReportesAdmin.html"><i class="bi bi-file-earmark-bar-graph"></i> Reportes</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/usuariosAdmin.html"><i class="bi bi-people"></i> Usuarios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <div class="barra-buscador">
+                <input type="text" placeholder="Buscar centros de formacion" minlength="1" maxlength="30">
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="derecha">
+                <div class="iconos">
+                    <a href="/Paginas_Stockmind/Rol_Administrativo/notificacionesAdmin.html"><i class="bi bi-bell"></i></a>
+                    <i class="bi bi-gear"></i>
+                </div>
+                <div class="perfil">
+                    <div class="info">
+                        <span class="nombre">
+                            <p><strong>ADMIN Sena</strong></p>
+                        </span>
+                        <small>ADMIN PRINCIPAL</small>
+                    </div>
+                    <a href="/Paginas_Stockmind/Rol_Administrativo/perfilAdmin.html"><div class="avatar"></div></a>
+            </div>
+        </header>
+        <section class="Parte_inicial">
+            <div>
+                <h1>Gestion de Centros de Formacion</h1>
+                <p>Visualiza y administra los centros de formación técnica a nivel municipal.</p>
+            </div>
+            <div>
+                <button><strong><i class="bi bi-plus-lg"></i>Nueva Sede</strong></button>
+            </div>
+        </section>
+        <section class="Tarjetas-general">
+            <div class="tarjeta1">
+                <div>
+                    <div>
+                        <h4>Sedes Totales</h4>
+                    </div>
+                    <div>
+                        <i class="bi bi-building"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>3</p>
+                </div>
+                <div>
+                    <p><i class="bi bi-graph-up"></i> +2 este año</p>
+                </div>
+            </div>
+            <div class="tarjeta1">
+                <div>
+                    <div>
+                        <h4>Total de Ambientes</h4>
+                    </div>
+                    <div>
+                        <i class="bi bi-door-open"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>2000</p>
+                </div>
+                <div>
+                    <p>Promedio de 12 por sede</p>
+                </div>
+            </div>
+            <div class="tarjeta1">
+                <div>
+                    <div>
+                        <h4>Elementos Totales</h4>
+                    </div>
+                    <div>
+                        <i class="bi bi-pc-display-horizontal"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>50000</p>
+                </div>
+                <div>
+                    <p>Elementos activos</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor-sedes">
+            <div class="cabecera-flex">
+                <div class="titulo-grupo">
+                    <h2>Centros de formacion</h2>
+                    <br>
+                    <span class="etiqueta-conteo">3 Resultados</span>
+                </div>
+                <div class="botones-grupo">
+                    <button class="btn-circular"><i class="bi bi-filter-right"></i></button>
+                    <button class="btn-circular seleccionado"><i class="bi bi-grid-fill"></i></button>
+                </div>
+            </div>
+            <div class="lista-tarjetas">
+                <div class="tarjeta">
+                    <div class="foto-sede" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8I6dleXEJP0E-4rwbLRd4VoyEBB5wlhUmw&s');">
+                        <span class="estado-activa"><span class="punto"></span> ACTIVA</span>
+                    </div>
+                    <div class="info-sede">
+                        <span class="subtitulo">POPAYÁN</span>
+                        <h3>Centro de Comercio y Servicios</h3>
+                        <div class="fila-dato">
+                            <span><i class="bi bi-door-open"></i> Ambientes</span>
+                            <span class="valor">32</span>
+                        </div>
+                        <div class="fila-dato">
+                            <span><i class="bi bi-pc-display"></i> Equipos</span>
+                            <span class="valor">412</span>
+                        </div>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/centro1Admin.html"><button class="btn-accion">Ver Ambientes <i class="bi bi-arrow-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <div class="foto-sede" style="background-image: url('https://www.sena.edu.co/es-co/Noticias/PublishingImages/Cauca2_19-04-2024.jpg');">
+                        <span class="estado-activa"><span class="punto"></span> ACTIVA</span>
+                    </div>
+                    <div class="info-sede">
+                        <span class="subtitulo">POPAYÁN</span>
+                        <h3>Centro de Teleinformática</h3>
+                        <div class="fila-dato">
+                            <span><i class="bi bi-door-open"></i> Ambientes</span>
+                            <span class="valor">24</span>
+                        </div>
+                        <div class="fila-dato">
+                            <span><i class="bi bi-pc-display"></i> Equipos</span>
+                            <span class="valor">856</span>
+                        </div>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/centro2Admin.html"><button class="btn-accion">Ver Ambientes <i class="bi bi-arrow-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <div class="foto-sede" style="background-image: url('https://pbs.twimg.com/ext_tw_video_thumb/1676619254211198976/pu/img/YFv75NVEnwJF9_kA.jpg');">
+                        <span class="estado-activa"><span class="punto"></span> ACTIVA</span>
+                    </div>
+                    <div class="info-sede">
+                        <span class="subtitulo">POPAYAN</span>
+                        <h3>Centro Agropecuario</h3>
+                        <div class="fila-dato">
+                            <span><i class="bi bi-door-open"></i> Ambientes</span>
+                            <span class="valor">18</span>
+                        </div>
+                        <div class="fila-dato">
+                            <span><i class="bi bi-pc-display"></i> Equipos</span>
+                            <span class="valor">128</span>
+                        </div>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/centro3Admin.html"><button class="btn-accion">Ver Ambientes <i class="bi bi-arrow-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

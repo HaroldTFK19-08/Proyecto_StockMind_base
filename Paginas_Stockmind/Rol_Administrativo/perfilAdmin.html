@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/perfilAdmin.css">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/aside.css">
+    <link rel="icon" type="image/svg+xml" href="/IMG/imgs-admin/Capa2.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Perfil Admin</title>
+</head>
+<body>
+    <main class="contenedor1">
+        <aside>
+            <div class="izquierda">
+                <img src="/IMG/imgs-admin/Capa 1.svg" alt="StockMind" style="width: 160px; height: auto; padding: 20px 0;">
+            </div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/inicioAdmin.html"><i class="bi bi-house-door"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/sedesAdmin.html"><i class="bi bi-building"></i>Centros</a>
+                        </li>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/inventarioAdmin.html"><i class="bi bi-box-seam"></i> Inventario</a>
+                        </li>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/movimientosAdmin.html"><i class="bi bi-box-arrow-in-right"></i>Movimientos</a>
+                        </li>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/ReportesAdmin.html"><i class="bi bi-file-earmark-bar-graph"></i> Reportes</a>
+                        </li>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/usuariosAdmin.html"><i class="bi bi-people"></i> Usuarios</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <article>
+            <section class="seccion_info_perfil">
+                <div class="card perfil_card">
+                    <div class="perfil">
+                        <div class="foto_perfil"></div>
+                        <div>
+                            <h1>Viviana Arias</h1>
+                            <p>vivianaArias@soysena.edu.co</p>
+                            <span class="badge">SUPER ADMINISTRADOR</span>
+                        </div>
+                    </div>
+                    <button class="btn-editar">
+                        <i class="bi bi-pencil-square"></i>
+                        Editar Perfil
+                    </button>
+                </div>
+                <div class="areaInfo">
+                    <div class="card info_personal">
+                        <h3>Información Personal</h3>
+                        <div class="personal">
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>3009758191</p>
+                            </div>
+                            <div>
+                                <h4>Cargo</h4>
+                                <p>Jefe de inventario</p>
+                            </div>
+                            <div>
+                                <h4>Ubicación oficina</h4>
+                                <p>Comercio y servicios (Centro)</p>
+                            </div>
+                            <div>
+                                <h4>Sede</h4>
+                                <p>SENA Popayán</p>
+                            </div>
+                            <div>
+                                <h4>Identificacion (CC)</h4>
+                                <p>123456789</p>
+                            </div>
+                            <div>
+                                <h4>Fecha de ingreso</h4>
+                                <p>01/02/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card seguridad">
+                        <div>
+                            <h3>Seguridad</h3>
+                        </div>
+                        <div class="opciones">
+                            <a href="#" class="btn-seguridad btn-password">
+                                <i class="bi bi-shield-lock"></i> Cambiar Contraseña
+                            </a>
+                            
+                            <a href="#" class="btn-seguridad btn-logout">
+                                <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+                            </a>
+                            <a href="#" class="btn-seguridad btn-delete"><i class="bi bi-trash3"></i> Eliminar Cuenta</a>
+                        </div>
+                    </div>
+                    <div class="card preferencias">
+                        <h2>Preferencias</h2>
+                        <div class="opcion">
+                            <span>Notificaciones Email</span>
+                            <input type="checkbox" checked>
+                        </div>
+                        <div class="opcion">
+                            <span>Modo Oscuro</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="opcion">
+                            <span>Alertas de Inventario</span>
+                            <input type="checkbox" checked>
+                        </div>
+                    </div>
+                    <div class="card actividad">
+                        <h2>Actividad Reciente</h2>
+                        <div class="actividad-item">
+                            <h4>Actualización de inventario</h4>
+                            <p>Se agregaron 15 computadores al sistema</p>
+                            <span>Hace 10 minutos</span>
+                        </div>
+                        <div class="actividad-item">
+                            <h4>Préstamo aprobado</h4>
+                            <p>Se aprobó un préstamo en el ambiente A-203</p>
+                            <span>Hace 1 hora</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contenedor-tabla">
+                <div class="card_tabla_card">
+                    <br>
+                    <h3>Inventario</h3>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Categoría</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Computador</td>
+                                <td>Tecnología</td>
+                                <td><span class="estado disponible">Disponible</span></td>
+                                <td class="acciones">
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-pencil"></i>
+                                    <i class="bi bi-trash"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Proyector</td>
+                                <td>Audiovisual</td>
+                                <td><span class="estado uso">En uso</span></td>
+                                <td class="acciones">
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-pencil"></i>
+                                    <i class="bi bi-trash"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Impresora</td>
+                                <td>Oficina</td>
+                                <td><span class="estado disponible">Disponible</span></td>
+                                <td class="acciones">
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-pencil"></i>
+                                    <i class="bi bi-trash"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+            </section>
+            <section class="contenedor-tabla">
+                <div class="card_tabla_card">
+                    <br>
+                    <h3>Usuarios</h3>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>ID Usuario</th>
+                                <th>Nombre de Usuario</th>
+                                <th>Rol</th>
+                                <th>Centro de formacion</th>
+                                <th>Programa</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>30</td>
+                                <td>Juan Pablo</td>
+                                <td>Cuenta-dante</td>
+                                <td>Comercio y servicios</td>
+                                <td>ADSO</td>
+                                <td class="acciones">
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-pencil"></i>
+                                    <i class="bi bi-trash"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>Andres Vargas</td>
+                                <td>Aprendiz</td>
+                                <td>Comercio y servicios</td>
+                                <td>ADSO</td>
+                                <td class="acciones">
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-pencil"></i>
+                                    <i class="bi bi-trash"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>David Guerrero</td>
+                                <td>Instructor</td>
+                                <td>Comercio y servicios</td>
+                                <td>Gestion Contable</td>
+                                <td class="acciones">
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-pencil"></i>
+                                    <i class="bi bi-trash"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>33</td>
+                                <td>Luis Noriega</td>
+                                <td>Cuenta-dante</td>
+                                <td>Teleinformatica</td>
+                                <td>Construccion</td>
+                                <td class="acciones">
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-pencil"></i>
+                                    <i class="bi bi-trash"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>Alex Vergara</td>
+                                <td>Cuenta-dante</td>
+                                <td>Agropecuario</td>
+                                <td>Catacion de cafe</td>
+                                <td class="acciones">
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-pencil"></i>
+                                    <i class="bi bi-trash"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>35</td>
+                                <td>Juliana Bolaños</td>
+                                <td>Instructora</td>
+                                <td>Comercio y servicios</td>
+                                <td>Cocina</td>
+                                <td class="acciones">
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-pencil"></i>
+                                    <i class="bi bi-trash"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </article>
+    </main>    
+</body>
+</html>

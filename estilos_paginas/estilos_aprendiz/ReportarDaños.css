@@ -1,0 +1,295 @@
+/* ================================================================
+   DISEÑO DE REPORTES - STOCKMIND
+   ================================================================ */
+
+.contenido-principal {
+    margin-left: 250px; 
+    width: calc(100% - 250px);
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f7fa; /* Fondo ligeramente más azulado para dar calma */
+    min-height: 100vh;
+}
+
+.perfil-contenedor {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* barra de info */
+.banner-notificaciones {
+    background: linear-gradient(135deg, #4dac21 0%, #80e761 100%); /* Azul oscuro SENA */
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative; /* Esto mantiene al logo dentro del banner */
+    overflow: hidden;
+}
+
+.banner-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-texto h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.banner-texto p {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 500px;
+}
+
+.img-logoMini {
+    width: 90px; /* Un poco más grande para que resalte en la esquina */
+    height: auto;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2));
+    
+    /* LA CLAVE: */
+    position: absolute;
+    right: 30px;  /* Lo empuja hacia la derecha del círculo rojo */
+    top: 60%;     /* Lo baja a la mitad */
+    transform: translateY(-50%); /* Lo centra verticalmente perfecto */
+}
+
+.banner-badge .estado-cuenta {
+    background: rgba(72, 187, 120, 0.2); /* Verde traslúcido */
+    color: #9ae6b4;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(72, 187, 120, 0.3);
+}
+
+
+
+/* Encabezado: Resaltando a Dante */
+.tarjeta-edicion {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    max-width: 900px;
+    margin: 20px auto;
+}
+/* Contenedor principal del encabezado */
+.encabezado-tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #bfc0c0; /* Línea divisoria sutil */
+}
+
+/* Estilo para el título principal (Reportar Daño) */
+.encabezado-tarjeta .titulo-seccion {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.encabezado-tarjeta .titulo-seccion i {
+    color: #ef4444; /* Rojo para indicar importancia/falla */
+}
+
+/* Estilo para el sub-badge (Nuevo Reporte para: Dante) */
+.encabezado-tarjeta h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #166534;
+    background-color: #f0fdf4; /* Fondo verde muy suave */
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content; /* Para que no ocupe todo el ancho */
+    border: 1px solid #dcfce7;
+    margin: 5px 0;
+}
+
+.encabezado-tarjeta h3 i {
+    color: #39A900; /* Verde SENA */
+}
+
+.encabezado-tarjeta h3 strong {
+    color: #39A900;
+    font-weight: 800;
+}
+
+/* Estilo para el párrafo descriptivo */
+.encabezado-tarjeta p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 600px; /* Evita que el texto se estire demasiado */
+}
+
+
+
+/* --- Grid y Campos (Diferenciación Total) --- */
+.losDatos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.dato-ancho {
+    grid-column: span 2;
+}
+
+/* Etiquetas que no parecen simples */
+.losDatos label {
+    display: block;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* El Contenedor de Input (Diferenciado del fondo) */
+.input-contenedor {
+    background: #f8fafc; /* Fondo gris para diferenciar el espacio de llenado */
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efecto de Foco Dinámico */
+.input-contenedor:focus-within {
+    background: #ffffff;
+    border-color: #38a900;
+    box-shadow: 0 10px 20px rgba(56, 169, 0, 0.08), 
+                0 0 0 4px rgba(56, 169, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.input-field {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+/* --- Área de Texto Mejorada --- */
+.textarea-contenedor {
+    align-items: flex-start !important;
+}
+
+.textarea-contenedor textarea {
+    min-height: 130px;
+    line-height: 1.5;
+}
+
+/* --- Zona de Carga de Foto (Efecto Dropzone) --- */
+.area-carga-foto {
+    margin-top: 5px;
+    border: 2px dashed #cbd5e1;
+    background: #f1f5f9;
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.area-carga-foto:hover {
+    border-color: #38a900;
+    background: #f0fdf4;
+}
+
+.contenido-carga i {
+    font-size: 3rem;
+    color: #94a3b8;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.area-carga-foto:hover i {
+    color: #38a900;
+}
+
+.texto-carga strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #334155;
+}
+
+.texto-carga span {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* --- Botones --- */
+.contenedor-botones {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-reporte-envio {
+    flex: 2; /* Más ancho el de enviar */
+    background: #1e293b;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-reporte-envio:hover {
+    background: #38a900;
+    box-shadow: 0 12px 24px rgba(56, 169, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+.boton-cancelar {
+    flex: 1;
+    background: #ffffff;
+    color: #64748b;
+    border: 2px solid #e2e8f0;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.boton-cancelar:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    color: #1e293b;
+}

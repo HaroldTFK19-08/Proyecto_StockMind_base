@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #f5f6f8; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+main{
+    width: 100%;
+    margin-left: 270px;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.barra-buscador{
+    position: relative;
+    width: 700px; 
+}
+
+.barra-buscador input{
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.barra-buscador i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 16px;
+}
+.derecha{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.iconos a, i{
+    text-decoration: none;
+    color: inherit;
+}
+.iconos i{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.iconos i:hover{
+    color: green;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.nombre{
+    font-weight: 600;
+}
+.info small{
+    color: green;
+    font-size: 11px;
+}
+.avatar{
+    width: 35px;
+    height: 35px;
+    background: #ccc;
+    border-radius: 50%;
+    background-image: url(/IMG/imgs-admin/retrato-mujer-feliz-tableta-digital_329181-11681.avif);
+    background-size: cover;
+    background-position: center;
+}
+.cartas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 240px;
+    height: 190px;
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* EFECTO HOVER */
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.10);
+}
+
+/* LINEA DECORATIVA SUPERIOR */
+
+.card::before{
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #39b600;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* TITULO */
+
+.card h3{
+    font-size: 7px;
+    color: #7a7a7a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* NUMERO GRANDE */
+
+.card .numero{
+    font-size: 40px;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+/* TEXTO ABAJO */
+
+.card p{
+    font-size: 12px;
+    color: #666;
+}
+
+/* CARD VERDE */
+
+.card.green{
+    background-color: #39b600;
+    color: white;
+}
+
+.card.green h3,
+.card.green p,
+.card.green .numero{
+    color: white;
+}
+
+.card.green::before{
+    background: rgba(255,255,255,0.3);
+}
+.seccion-info{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+.formulario-movimiento{
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.titulo-form{
+    margin-bottom: 25px;
+}
+
+.titulo-form h2{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.titulo-form p{
+    color: gray;
+    font-size: 14px;
+}
+
+/* ===== FORM ===== */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.grupo-form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-form label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+.grupo-form input,
+.grupo-form textarea{
+    border: none;
+    outline: none;
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 14px;
+}
+.grupo-form select{
+    border: 1px solid #b8e6a8;
+    outline: none;
+
+    background: #eaf8e4;
+    color: #2f5e1d;
+
+    border-radius: 12px;
+    padding: 14px;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+.grupo-form textarea{
+    resize: none;
+    height: 90px;
+}
+
+/* ===== BOTON ===== */
+
+.btn-guardar{
+    border: none;
+    background: #39b600;
+    color: white;
+    padding: 15px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-guardar:hover{
+    background: #2f9400;
+}
+.tablas{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ===== CAJAS ===== */
+
+.entradas,
+.salidas{
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* ===== HEADER TABLAS ===== */
+
+.header-tabla{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-tabla h3{
+    font-size: 22px;
+}
+
+.header-tabla button{
+    border: none;
+    background: #e8f7df;
+    color: #39b600;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* ===== TABLA ===== */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: #f7f7f7;
+}
+
+th{
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
+    color: #666;
+}
+
+td{
+    padding: 16px 14px;
+    border-bottom: 1px solid #ececec;
+    font-size: 14px;
+}
+
+tbody tr:hover{
+    background: #fafafa;
+}

@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #f5f6f8; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+main{
+    width: 100%;
+    margin-left: 270px;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.barra-buscador{
+    position: relative;
+    width: 600px; 
+}
+
+.barra-buscador input{
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.barra-buscador i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 16px;
+}
+.derecha{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 70px;
+}
+.iconos a, i{
+    text-decoration: none;
+    color: inherit;
+}
+.iconos i{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.iconos i:hover{
+    color: green;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.nombre{
+    font-weight: 600;
+}
+.info small{
+    color: green;
+    font-size: 11px;
+}
+.avatar{
+    width: 35px;
+    height: 35px;
+    background: #ccc;
+    border-radius: 50%;
+    background-image: url(/IMG/imgs-admin/retrato-mujer-feliz-tableta-digital_329181-11681.avif);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+/* CONTENEDOR */
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+/* TARJETA */
+.card{ 
+    width: 250px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+/* HOVER */
+.card:hover{
+    transform: translateY(-4px);
+}
+
+/* ICONO */
+.icono{
+    width: 50px;
+    height: 50px;
+    background: #e8f5e9;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono i{
+    font-size: 22px;
+    color: #1b5e20;
+}
+
+/* TEXTO */
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info span{
+    font-size: 11px;
+    color: #6b7280;
+    letter-spacing: 1px;
+}
+
+.info h2{
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+/* CONTENEDOR */
+.tabla-container{
+    width: 95%;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* HEADER */
+.tabla-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* BADGE */
+.estado{
+    background: #e8f5e9;
+    color: #166534;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+/* BOTONES */
+.acciones-header{
+    display: flex;
+    gap: 10px;
+}
+
+.acciones-header button{
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.acciones-header button:hover{
+    background: #f9fafb;
+}
+
+/* TABLA */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* ENCABEZADO */
+thead{
+    background: #f9fafb;
+}
+
+th{
+    text-align: left;
+    padding: 14px;
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+/* FILAS */
+td{
+    padding: 16px 14px;
+    font-size: 14px;
+}
+
+/* SEPARACIÓN SUAVE */
+tbody tr{
+    border-top: 1px solid #f1f1f1;
+}
+
+/* HOVER */
+tbody tr:hover{
+    background: #f9fafb;
+}
+
+/* ID */
+.id{
+    color: #16a34a;
+    font-weight: 600;
+}
+
+/* NOMBRE DESTACADO */
+td strong{
+    font-weight: 600;
+}
+
+/* ACCIONES */
+.acciones{
+    display: flex;
+    gap: 15px;
+}
+
+.acciones i{
+    color: #9ca3af;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.acciones i:hover{
+    color: #16a34a;
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+.tabla-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* PAGINACIÓN */
+.paginacion{
+    display: flex;
+    gap: 6px;
+}
+
+.paginacion button{
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #f3f4f6;
+    cursor: pointer;
+}
+
+.paginacion .activo{
+    background: #166534;
+    color: white;
+}

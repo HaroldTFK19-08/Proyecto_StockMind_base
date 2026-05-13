@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaiones- StockMind</title>
+    <link rel="stylesheet" href="/estilos_paginas/estilos_aprendiz/NotificacionesAprendiz.css"> 
+    <link rel="stylesheet" href="/estilos_paginas/estilos_parte_inicial/Global.css">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_aprendiz/BarraNavegacion.css">
+    
+</head>
+<body>
+    <aside>
+        <div class="izquierda">
+            <div>
+                <img style="width: 160px; height: 160px;" src="/IMG/imgs-admin/Capa 1.svg" alt="StockMind">
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/InicioDeAprendiz.html"><li><i class="bi bi-house-door"></i>Inicio</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/AprendizPerfil.html"><li><i class="bi bi-person-gear"></i>Perfil</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/NotificacionesAprendiz.html"><li><i class="bi bi-bell"></i>Notificaciones</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/ReportarDaños.html"><li><i class="bi bi-exclamation-triangle"></i>Reportar Daño</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/MisReportesAprendiz.html"><li><i class="bi bi-file-check"></i>Mis Reportes</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/MisElementosAprendiz.html"><li><i class="bi bi-person-check-fill"></i>Mis elementos</li></a>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+<main class="contenido-principal">
+    <div class="contenedor-notificaciones">
+        <header class="encabezado-seccion">
+            <h1>Centro de Notificaciones</h1>
+            <p>Gestiona y revisa los elementos asignados a tu nombre en el ambiente de formación.</p>
+        </header>
+
+        <div class="barra-busqueda-container">
+            <div class="input-busqueda-wrapper">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Buscar notificaciones (ej: Computador, Mouse, Instructor...)" id="inputBusqueda">
+            </div>
+            <button class="boton-filtro">
+                <i class="bi bi-sliders"></i>
+                <span>Filtros</span>
+            </button>
+        </div>
+        <section class="lista-notificaciones">
+            <div class="tarjeta-notificacion nueva">
+                <div class="icono-tipo">
+                    <i class="bi bi-laptop"></i>
+                </div>
+                <div class="info-notificacion">
+                    <div class="titulo-fila">
+                        <h3>Equipo Asignado: PC #10</h3>
+                        <span class="etiqueta-nueva">Nuevo</span>
+                    </div>
+                    <p>El Instructor <strong>Carlos Pérez</strong> te ha asignado el equipo del ambiente 204. Por favor, verifica el estado del hardware al recibirlo.</p>
+                    <div class="metadatos">
+                        <span><i class="bi bi-calendar3"></i> 22 Abril 2026</span>
+                        <span><i class="bi bi-geo-alt"></i> Centro Comercio y Servicios</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-notificacion">
+                <div class="icono-tipo">
+                    <i class="bi bi-mouse3"></i>
+                </div>
+                <div class="info-notificacion">
+                    <h3>Periférico Asignado: Mouse Óptico</h3>
+                    <p>El instructor <strong>Carlos Pérez</strong> te ha registrado la entrega de un mouse Genius (Numero: SENA-23) ambiente 204, para complementar tu estación de trabajo.</p>
+                    <div class="metadatos">
+                        <span><i class="bi bi-calendar3"></i> 21 Abril 2026</span>
+                        <span><i class="bi bi-geo-alt"></i> Centro Comercio y Servicios</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+</html>

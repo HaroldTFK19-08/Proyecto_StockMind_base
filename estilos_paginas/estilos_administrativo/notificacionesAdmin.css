@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #f5f6f8; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+main{
+    width: 100%;
+    margin-left: 260px;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.barra-buscador{
+    position: relative;
+    width: 700px; 
+}
+
+.barra-buscador input{
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.barra-buscador i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 16px;
+}
+.derecha{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.iconos i{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.iconos a, i{
+    text-decoration: none;
+    color: inherit;
+}
+.iconos i:hover{
+    color: green;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.nombre{
+    font-weight: 600;
+}
+.info small{
+    color: green;
+    font-size: 11px;
+}
+.avatar{
+    width: 35px;
+    height: 35px;
+    background: #ccc;
+    border-radius: 50%;
+    background-image: url(/IMG/imgs-admin/retrato-mujer-feliz-tableta-digital_329181-11681.avif);
+    background-size: cover;
+    background-position: center;
+}
+.contenedor-notificaciones{
+    width: 100%;
+}
+
+/* TITULO */
+
+.titulo h1{
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.titulo p{
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* SUBTITULOS */
+
+.grupo{
+    margin-bottom: 35px;
+}
+
+.subtitulo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #1f2937;
+}
+
+.circulo{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #166534;
+}
+
+.gris{
+    border-color: #9ca3af;
+}
+
+/* TARJETAS */
+
+.notificacion{
+    position: relative;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.notificacion::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 14px 0 0 14px;
+}
+
+.danger::before{
+    background: #dc2626;
+}
+
+.success::before{
+    background: #15803d;
+}
+
+.warning::before{
+    background: #92400e;
+}
+
+.neutral::before{
+    background: #94a3b8;
+}
+
+/* ICONOS */
+
+.icono{
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.danger-icon{
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.success-icon{
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.warning-icon{
+    background: #dbeafe;
+    color: #7c2d12;
+}
+
+.neutral-icon{
+    background: #e2e8f0;
+    color: #475569;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    flex: 1;
+}
+
+.contenido h2{
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.contenido p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.contenido strong{
+    color: #111827;
+}
+
+/* BOTONES */
+
+button{
+    border: none;
+    background: #166534;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secundario{
+    background: #eef2ff;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+}
+.btn-secundario:hover{
+    background: #166534;
+    color: white;
+}
+/* HORA */
+
+.hora{
+    color: #9ca3af;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+
+    .notificacion{
+        flex-direction: column;
+    }
+
+    .hora{
+        margin-top: 10px;
+    }
+
+    .titulo h1{
+        font-size: 26px;
+    }
+
+    .contenido h2{
+        font-size: 18px;
+    }
+}

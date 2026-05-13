@@ -1,0 +1,330 @@
+:root {
+    --bg: #f4f6f9;
+    --surface: #ffffff;
+    --surface-soft: #f8fafc;
+    --border: #e6e8ed;
+    --text: #111827;
+    --muted: #6b7280;
+    --success: #22c55e;
+    --success-soft: #ecfdf5;
+    --primary: #2563eb;
+    --danger: #db2777;
+    --danger-soft: #fce7f3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: var(--bg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text);
+}
+main {
+    width: 100%;
+    margin-left: 270px;
+    padding: 24px 28px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.barra-buscador{
+    position: relative;
+    width: 700px; 
+}
+
+.barra-buscador input{
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.barra-buscador i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 16px;
+}
+.derecha{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.iconos i{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.iconos i:hover{
+    color: green;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.nombre{
+    font-weight: 600;
+}
+
+.info small{
+    color: green;
+    font-size: 11px;
+}
+.avatar{
+    width: 35px;
+    height: 35px;
+    background: #ccc;
+    border-radius: 50%;
+    background-image: url(/IMG/imgs-admin/retrato-mujer-feliz-tableta-digital_329181-11681.avif);
+    background-size: cover;
+    background-position: center;
+}
+.parte-inicial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.boton-filtro {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+    padding: 12px 20px;
+    border-radius: 9999px; /* Bordes muy redondeados (píldora) */
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s ease;
+}
+
+.boton-filtro:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+/* Botón de Agregar Ambiente (Verde) */
+.boton-agregar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1e6b0a; /* Verde oscuro del diseño */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(30, 107, 10, 0.15);
+    transition: all 0.2s ease;
+}
+
+.boton-agregar:hover {
+  background-color: #154c07; /* Un tono de verde más oscuro en hover */
+  transform: translateY(-1px); /* Efecto leve de elevación */
+}
+/* Contenedor de la tarjeta */
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tarjeta {
+    width: 100%;
+    max-width: 340px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Área de la Imagen y el Estado */
+.tarjeta-cabecera {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.tarjeta-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estado de los Ambientes (Activo / Mantenimiento) */
+.estado {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.estado.activo {
+    background-color: #f0fdf4;
+    color: #166534;
+}
+
+.estado.mantenimiento {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+/* Cuerpo de la Tarjeta */
+.tarjeta-cuerpo {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Fila de Título y Capacidad */
+.fila-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.titulo-ambiente {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 4px 0;
+}
+
+.subtitulo-ambiente {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #15803d;
+    margin: 0;
+}
+
+.grupo-capacidad {
+    text-align: right;
+}
+
+.capacidad-numero {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1;
+}
+
+.capacidad-etiqueta {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.05em;
+}
+
+/* Lista de Equipos */
+.lista-equipos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-equipo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #f1f5f9;
+}
+
+.info-equipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icono-equipo {
+    font-size: 1.2rem;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+}
+
+.nombre-equipo {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.cantidad-equipo {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Pie / Botón Inferior */
+.tarjeta-pie {
+    padding: 0 20px 20px 20px;
+}
+
+.boton-accion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0fdf4;
+    color: #15803d;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.boton-accion:hover {
+    background-color: #dcfce7;
+}
+
+.boton-accion:active {
+    transform: scale(0.98);
+}
+
+.flecha {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+    }
+
+.boton-accion:hover .flecha {
+    transform: translateX(4px);
+}

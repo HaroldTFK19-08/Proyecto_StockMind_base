@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Datos - StockMind</title>
+    <link rel="stylesheet" href="/estilos_paginas/estilos_aprendiz/EditarDatosAprendiz.css"> 
+    <link rel="stylesheet" href="/estilos_paginas/estilos_parte_inicial/Global.css">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_aprendiz/BarraNavegacion.css">
+</head>
+<body>
+    <aside>
+        <div class="izquierda">
+            <div>
+                <img style="width: 160px; height: 160px;" src="/IMG/imgs-admin/Capa 1.svg" alt="StockMind">
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/InicioDeAprendiz.html"><li><i class="bi bi-house-door"></i>Inicio</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/AprendizPerfil.html"><li><i class="bi bi-person-gear"></i>Perfil</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/NotificacionesAprendiz.html"><li><i class="bi bi-bell"></i>Notificaciones</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/ReportarDaños.html"><li><i class="bi bi-exclamation-triangle"></i>Reportar Daño</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/MisReportesAprendiz.html"><li><i class="bi bi-file-check"></i>Mis Reportes</li></a>
+                    <a href="/Paginas_Stockmind/Rol_Aprendiz/MisElementosAprendiz.html"><li><i class="bi bi-person-check-fill"></i>Mis elementos</li></a>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main class="contenido-principal">
+        <div class="perfil-contenedor">
+            <h2 class="titulo-seccion"><i class="bi bi-person-gear"></i> Configuración de Cuenta</h2>
+            <section class="tarjeta-edicion">
+                <div class="encabezado-tarjeta">
+                <h3><i class="bi bi-person-lines-fill"></i> Editar Información Personal</h3>
+                <p>Actualiza tus datos de contacto y nombres registrados en el sistema.</p>
+                </div>
+
+                <form class="formulario-edicion">
+                    <div class="losDatos">
+
+                        <div class="dato">
+                            <label>Primer Nombre</label>
+                            <div class="input-contenedor">
+                                <i class="bi bi-person"></i>
+                                <input type="text" name="primerNombre" value="Juan" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="dato">
+                            <label>Segundo Nombre</label>
+                            <div class="input-contenedor">
+                                <i class="bi bi-person"></i>
+                                <input type="text" name="segundoNombre" value="Andres" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="dato">
+                            <label>Primer Apellido</label>
+                            <div class="input-contenedor">
+                                <i class="bi bi-person-badge"></i>
+                                <input type="text" name="primerApellido" value="Estrada" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="dato">
+                            <label>Segundo Apellido</label>
+                            <div class="input-contenedor">
+                                <i class="bi bi-person-badge"></i>
+                                <input type="text" name="segundoApellido" value="Erazo" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="dato">
+                            <label>Teléfono</label>
+                            <div class="input-contenedor">
+                                <i class="bi bi-telephone"></i>
+                                <input type="tel" name="telefono" value="310 123 4567" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="dato-ancho">
+                            <label>Correo Electrónico</label>
+                            <div class="input-contenedor">
+                                <i class="bi bi-envelope"></i>
+                                <input type="email" name="correo" value="juanestrada@soysena.edu.co" class="input-field">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contenedor-botones">
+                        <button type="submit" class="boton-accion-primario">
+                            <i class="bi bi-check-lg"></i> Guardar Cambios
+                        </button>
+                        <a href="/Paginas_Stockmind/Rol_Aprendiz/AprendizPerfil.html" class="boton-cancelar">
+                            Cancelar
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/aside.css">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/movimientosAdmin.css">
+    <link rel="icon" type="image/svg+xml" href="/IMG/imgs-admin/Capa2.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Movimientos Admin</title>
+</head>
+<body>
+    <main>
+        <aside>
+            <div class="izquierda">
+                <img src="/IMG/imgs-admin/Capa 1.svg" alt="StockMind" style="width: 160px; height: auto; padding: 20px 0;">
+            </div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/inicioAdmin.html"><i class="bi bi-house-door"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/sedesAdmin.html"><i class="bi bi-building"></i> Sedes</a>
+                        </li>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/inventarioAdmin.html"><i class="bi bi-box-seam"></i> Inventario</a>
+                        </li>
+                        <li class="selected"> 
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/movimientosAdmin.html"><i class="bi bi-box-arrow-in-right"></i>Movimientos</a>
+                        </li>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/ReportesAdmin.html"><i class="bi bi-file-earmark-bar-graph"></i> Reportes</a>
+                        </li>
+                        <li>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/usuariosAdmin.html"><i class="bi bi-people"></i> Usuarios</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <article>
+            <section class="header0">
+                <header>
+                    <div class="barra-buscador">
+                        <input type="text" placeholder="Buscar" minlength="1" maxlength="30">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="derecha">
+                        <div class="iconos">
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/notificacionesAdmin.html"><i class="bi bi-bell"></i></a>
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <div class="perfil">
+                            <div class="info">
+                                <span class="nombre">
+                                    <p><strong>ADMIN Sena</strong></p>
+                                </span>
+                                <small>ADMIN PRINCIPAL</small>
+                            </div>
+                            <a href="/Paginas_Stockmind/Rol_Administrativo/perfilAdmin.html"><div class="avatar"></div></a>
+                    </div>
+                </header>
+            </section>
+            <section class="cartas">
+                <div class="card">
+                    <div>
+                        <h3 style="font-size: 16px;">Movimientos Hoy</h3>
+                    </div>
+                    <div>
+                        <p class="numero">26</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 15px;">+12 nuevos movimientos</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3 style="font-size: 16px;">Elementos trasladados</h3>
+                    </div>
+                    <div>
+                        <p class="numero">26</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 15px;">+12% vs ayer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3 style="font-size: 16px;">Elementos a movilizar</h3>
+                    </div>
+                    <div>
+                        <p class="numero">26</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 15px;">Rastreo en tiempo real activo</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3 style="font-size: 16px;">Movimientos finalizados</h3>
+                    </div>
+                    <div>
+                        <p class="numero">26</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 15px;">+20 recien llegados</p>
+                    </div>
+                </div>
+            </section>
+            <section class="seccion-info">
+                <div class="formulario-movimiento">
+                    <div class="titulo-form">
+                        <h2>Registrar Movimiento</h2>
+                        <p>Gestiona entradas y salidas del inventario</p>
+                    </div>
+                    <form action="">
+                        <div class="grupo-form">
+                            <label>Tipo de movimiento</label>
+                            <select>
+                                <option>Seleccionar</option>
+                                <option>Entrada</option>
+                                <option>Salida</option>
+                            </select>
+                        </div>
+                        <div class="grupo-form">
+                            <label>Nombre del elemento</label>
+                            <input type="text" placeholder="Ej: Laptop Dell">
+                        </div>
+                        <div class="grupo-form">
+                            <label>Categoría</label>
+                            <select>
+                                <option>Seleccionar categoría</option>
+                                <option>Equipos</option>
+                                <option>Herramientas</option>
+                                <option>Mobiliario</option>
+                            </select>
+                        </div>
+                        <div class="grupo-form">
+                            <label>Cantidad</label>
+                            <input type="number" placeholder="0">
+                        </div>
+                        <div class="grupo-form">
+                            <label>Sede</label>
+                            <select>
+                                <option>Seleccionar sede</option>
+                                <option>Sede Norte</option>
+                                <option>Sede Central</option>
+                                <option>Sede Sur</option>
+                            </select>
+                        </div>
+                        <div class="grupo-form">
+                            <label>Responsable</label>
+                            <input type="text" placeholder="Nombre del responsable">
+                        </div>
+                        <div class="grupo-form">
+                            <label>Fecha</label>
+                            <input type="date">
+                        </div>
+                        <div class="grupo-form">
+                            <label>Observaciones</label>
+                            <textarea placeholder="Escribe una observación..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-guardar">
+                            <i class="bi bi-floppy"></i>
+                            Guardar Movimiento
+                        </button>
+                    </form>
+                </div>
+                <div class="tablas">
+                    <div class="entradas">
+                        <div class="header-tabla">
+                            <h3>Entradas</h3>
+                            <button>Ver todo</button>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Elemento</th>
+                                    <th>Cantidad</th>
+                                    <th>Fecha</th>
+                                    <th>Responsable</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Laptop Dell</td>
+                                    <td>5</td>
+                                    <td>12/05/2026</td>
+                                    <td>Carlos Ruiz</td>
+                                </tr>
+                                <tr>
+                                    <td>Mouse Logitech</td>
+                                    <td>12</td>
+                                    <td>12/05/2026</td>
+                                    <td>Laura Pérez</td>
+                                </tr>
+                                <tr>
+                                    <td>Monitor Samsung</td>
+                                    <td>3</td>
+                                    <td>11/05/2026</td>
+                                    <td>Admin SENA</td>
+                                </tr>
+                                <tr>
+                                    <td>Teclado HP</td>
+                                    <td>8</td>
+                                    <td>11/05/2026</td>
+                                    <td>Camila López</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Impresora Epson</td>
+                                    <td>2</td>
+                                    <td>10/05/2026</td>
+                                    <td>Jorge Ramírez</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Router TP-Link</td>
+                                    <td>4</td>
+                                    <td>10/05/2026</td>
+                                    <td>Daniel Torres</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="salidas">
+                        <div class="header-tabla">
+                            <h3>Salidas</h3>
+                            <button>Ver todo</button>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Elemento</th>
+                                    <th>Cantidad</th>
+                                    <th>Fecha</th>
+                                    <th>Responsable</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Teclado HP</td>
+                                    <td>2</td>
+                                    <td>12/05/2026</td>
+                                    <td>Camila López</td>
+                                </tr>
+                                <tr>
+                                    <td>Proyector Epson</td>
+                                    <td>1</td>
+                                    <td>10/05/2026</td>
+                                    <td>Jorge Ruiz</td>
+                                </tr>
+                                <tr>
+                                    <td>Router TP-Link</td>
+                                    <td>4</td>
+                                    <td>09/05/2026</td>
+                                    <td>Admin SENA</td>
+                                </tr>
+                                <tr>
+                                    <td>Monitor LG</td>
+                                    <td>3</td>
+                                    <td>08/05/2026</td>
+                                    <td>Laura Pérez</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Mouse Logitech</td>
+                                    <td>6</td>
+                                    <td>07/05/2026</td>
+                                    <td>Carlos Ramírez</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Impresora Canon</td>
+                                    <td>1</td>
+                                    <td>06/05/2026</td>
+                                    <td>Valentina Cruz</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #f5f6f8; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+main{
+    width: 100%;
+    margin-left: 270px;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.barra-buscador{
+    position: relative;
+    width: 600px; 
+}
+
+.barra-buscador input{
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.barra-buscador i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 16px;
+}
+.derecha{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.iconos i{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.iconos i:hover{
+    color: green;
+}
+.perfil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.nombre{
+    font-weight: 600;
+}
+.info small{
+    color: green;
+    font-size: 11px;
+}
+.avatar{
+    width: 35px;
+    height: 35px;
+    background: #ccc;
+    border-radius: 50%;
+    background-image: url(/IMG/imgs-admin/retrato-mujer-feliz-tableta-digital_329181-11681.avif);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.menu-perfil{
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    width: 180px;
+    background: white;
+
+    border-radius: 10px;
+    padding: 10px;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-perfil.active{
+    display: flex;
+}
+.menu-perfil a,
+.menu-perfil button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 10px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.perfil:hover .menu-perfil{
+    display: flex;
+}
+.menu-perfil button{
+    background: #ff4d4d;
+    color: white;
+}
+.Parte_inicial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Parte_inicial button {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: #39A900;
+    color:white;
+    border: none;
+    gap: 10px;
+    cursor: pointer;
+}
+.Tarjetas-general {
+    display: flex;             
+    justify-content: space-between; 
+    gap: 20px;              
+    padding: 20px;             
+    background-color: #f8f9fa; 
+}
+.tarjeta1 {
+    background-color: #ffffff; 
+    flex: 1;                   
+    padding: 25px;             
+    border-radius: 16px;       
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    display: flex;             
+    flex-direction: column;   
+    justify-content: space-between; 
+    min-height: 180px;      
+}
+.tarjeta1:first-child {
+    border-left: 6px solid #39A900; 
+}
+
+.tarjeta1  div:first-child {
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+}
+
+.tarjeta1 h4 {
+    color: #6c757d;           
+    font-size: 13px;           
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;     
+    margin: 0;                 
+}
+
+.tarjeta1 i.bi {
+    font-size: 22px;           
+    color: #39A900;            
+}
+
+.tarjeta1 div:nth-child(2) p {
+    font-size: 48px;           
+    font-weight: 800;          
+    color: #1a1a1a;            
+    margin: 15px 0;           
+}
+
+.tarjeta1 div:last-child p {
+    margin: 0;                 
+    font-size: 14px;           
+    color: #6c757d;            
+}
+
+.tarjeta1:first-child div:last-child p {
+    background-color: #ECFFE9; 
+    color: #39A900;            
+    padding: 5px 12px;         
+    border-radius: 20px;       
+    font-weight: 600;          
+    width: fit-content;        
+    display: flex;             
+    align-items: center;
+    gap: 5px;                 
+}
+.contenedor-sedes {
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.cabecera-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.lista-tarjetas {
+    display: flex;       
+    flex-wrap: wrap;     
+    gap: 20px;           
+}
+
+.tarjeta {
+    background-color: white;
+    flex: 1; 
+    min-width: 300px;    
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-sede {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end; 
+}
+.estado-activa {
+    background-color: white;
+    height: fit-content;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.punto {
+    width: 7px;
+    height: 7px;
+    background: #39A900; 
+    border-radius: 50%;
+}
+
+.info-sede {
+    padding: 20px;
+}
+
+.subtitulo {
+    color: #39A900;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.info-sede h3 {
+    margin: 8px 0 18px 0;
+    font-size: 17px;
+    color: #1a1a1a;
+}
+
+.fila-dato {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.valor {
+    font-weight: bold;
+    color: #212529;
+}
+a{
+    text-decoration: none;
+    color: #015718;
+}
+.btn-accion {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    background-color: #f1f3f5;
+    border-radius: 12px;
+    color: #015718; 
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.btn-accion:hover {
+    background-color: #015718;
+    color: white;
+}
+
+.btn-circular {
+    border: 1px solid #ddd;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn-circular.seleccionado {
+    background-color: #f8f9fa;
+    color: #1a1a1a;
+}

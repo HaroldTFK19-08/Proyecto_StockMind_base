@@ -1,0 +1,273 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/aside.css">
+    <link rel="stylesheet" href="/estilos_paginas/estilos_administrativo/reportesAdmin.css">
+    <link rel="icon" type="image/svg+xml" href="/IMG/imgs-admin/Capa2.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Reportes Admin</title>
+</head>
+<body>
+    <aside>
+        <div class="izquierda">
+            <img src="/IMG/imgs-admin/Capa 1.svg" alt="StockMind" style="width: 160px; height: auto; padding: 20px 0;">
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/inicioAdmin.html"><i class="bi bi-house-door"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/sedesAdmin.html"><i class="bi bi-building"></i>Centros</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/inventarioAdmin.html"><i class="bi bi-box-seam"></i> Inventario</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/movimientosAdmin.html"><i class="bi bi-box-arrow-in-right"></i>Movimientos</a>
+                    </li>
+                    <li class="selected">
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/ReportesAdmin.html"><i class="bi bi-file-earmark-bar-graph"></i> Reportes</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas_Stockmind/Rol_Administrativo/usuariosAdmin.html"><i class="bi bi-people"></i> Usuarios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <div class="barra-buscador">
+                <input type="text" placeholder="Buscar" minlength="1" maxlength="50">
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="derecha">
+                <div class="iconos">
+                    <a href="/Paginas_Stockmind/Rol_Administrativo/notificacionesAdmin.html"><i class="bi bi-bell"></i></a>
+                    <i class="bi bi-gear"></i>
+                </div>
+                <div class="perfil">
+                    <div class="info">
+                        <span class="nombre">
+                            <p><strong>ADMIN Sena</strong></p>
+                        </span>
+                        <small>ADMIN PRINCIPAL</small>
+                    </div>
+                    <a href="/Paginas_Stockmind/Rol_Administrativo/perfilAdmin.html"><div class="avatar"></div></a>
+            </div>
+        </header>
+        <section class="titulo_reportes">
+            <div>
+                <h1>Reportes</h1>
+                <p>Visión general del estado operativo y gestión de incidencias del almacén.</p>
+            </div>
+            <div>
+                <button class="PDF">
+                    <div>
+                        <i class="bi bi-file-earmark-pdf"></i>
+                    </div>
+                    <div>
+                        <p><strong>Generar PDF</strong></p>
+                    </div>
+                </button>
+            </div>
+        </section>
+        <section class="resumen">
+            <div class="card-resumen">
+                <div class="icono naranja">
+                    <i class="bi bi-exclamation-circle"></i>
+                </div>
+                <div class="contenido">
+                    <span class="badge alerta">+2 hoy</span>
+                    <h2>24</h2>
+                    <p>Fallas pendientes</p>
+                </div>
+            </div>
+            <div class="card-resumen">
+                <div class="icono azul">
+                    <i class="bi bi-arrow-repeat"></i>
+                </div>
+                <div class="contenido">
+                    <span class="badge proceso">Activo</span>
+                    <h2>18</h2>
+                    <p>En proceso</p>
+                </div>
+            </div>
+            <div class="card-resumen">
+                <div class="icono verde">
+                    <i class="bi bi-check-circle"></i>
+                </div>
+                <div class="contenido">
+                    <span class="badge ok">94% efic.</span>
+                    <h2>142</h2>
+                    <p>Fallas solucionadas</p>
+                </div>
+            </div>
+            <div class="card-resumen">
+                <div class="icono gris">
+                    <i class="bi bi-file-earmark-text"></i>
+                </div>
+                <div class="contenido">
+                    <span class="badge neutro">Mensual</span>
+                    <h2>184</h2>
+                    <p>Total reportes</p>
+                </div>
+            </div>
+        </section>
+        <section class="tabla-reportes">
+            <div class="header-tabla">
+                <h3>Reportes recientes</h3>
+                <div class="filtros">
+                    <button>Filtrar</button>
+                    <button>Todas las Categorías</button>
+                    <button>Todos los Estados</button>
+                    <a href="#" class="link_historial">Ver historial completo</a>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Categoría</th>
+                        <th>Centro de formación</th>
+                        <th>Ambiente</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="item">
+                                <i class="bi bi-tools"></i>
+                                <span>Martillo</span>
+                            </div>
+                        </td>
+                        <td>Herramientas</td>
+                        <td>Centro Teleinformatica</td>
+                        <td>Ambiente 201</td>
+                        <td><span class="estado pendiente">Pendiente</span></td>
+                        <td>24-10-2026</td>
+                        <td class="acciones">
+                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-pencil"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="item">
+                                <i class="bi bi-lightning"></i>
+                                <span>Taladro Percutor Bosch</span>
+                            </div>
+                        </td>
+                        <td>Herramientas Eléctricas</td>
+                        <td>Centro Textil</td>
+                        <td>Mantenimiento</td>
+                        <td><span class="estado proceso">En proceso</span></td>
+                        <td>23 Oct, 2023</td>
+                        <td class="acciones">
+                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-pencil"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="item">
+                                <i class="bi bi-building"></i>
+                                <span>Aire Acondicionado Central</span>
+                            </div>
+                        </td>
+                        <td>Infraestructura</td>
+                        <td>Sede Administrativa</td>
+                        <td>Aula Magna</td>
+                        <td><span class="estado ok">Solucionado</span></td>
+                        <td>21 Oct, 2023</td>
+                        <td class="acciones">
+                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-pencil"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="item"><i class="bi bi-laptop"></i><span>Portátil HP ProBook</span></div></td>
+                        <td>Tecnología</td>
+                        <td>Centro TIC</td>
+                        <td>Aula 204</td>
+                        <td><span class="estado proceso">En proceso</span></td>
+                        <td>20 Oct, 2023</td>
+                        <td class="acciones"><i class="bi bi-eye"></i><i class="bi bi-pencil"></i></td>
+                    </tr>
+                    <tr>
+                        <td><div class="item"><i class="bi bi-printer"></i><span>Impresora Epson L3150</span></div></td>
+                        <td>Oficina</td>
+                        <td>Centro Administrativo</td>
+                        <td>Oficina 12</td>
+                        <td><span class="estado pendiente">Pendiente</span></td>
+                        <td>19 Oct, 2023</td>
+                        <td class="acciones"><i class="bi bi-eye"></i><i class="bi bi-pencil"></i></td>
+                    </tr>
+                    <tr>
+                        <td><div class="item"><i class="bi bi-wrench"></i><span>Llave inglesa industrial</span></div></td>
+                        <td>Herramientas</td>
+                        <td>Centro Metalmecánico</td>
+                        <td>Taller 2</td>
+                        <td><span class="estado ok">Solucionado</span></td>
+                        <td>18 Oct, 2023</td>
+                        <td class="acciones"><i class="bi bi-eye"></i><i class="bi bi-pencil"></i></td>
+                    </tr>
+                    <tr>
+                        <td><div class="item"><i class="bi bi-cpu"></i><span>Servidor Dell PowerEdge</span></div></td>
+                        <td>Tecnología</td>
+                        <td>Centro TIC</td>
+                        <td>Data Center</td>
+                        <td><span class="estado proceso">En proceso</span></td>
+                        <td>17 Oct, 2023</td>
+                        <td class="acciones"><i class="bi bi-eye"></i><i class="bi bi-pencil"></i></td>
+                    </tr>
+                    <tr>
+                        <td><div class="item"><i class="bi bi-camera-video"></i><span>Cámara de seguridad Hikvision</span></div></td>
+                        <td>Seguridad</td>
+                        <td>Sede Principal</td>
+                        <td>Entrada</td>
+                        <td><span class="estado pendiente">Pendiente</span></td>
+                        <td>16 Oct, 2023</td>
+                        <td class="acciones"><i class="bi bi-eye"></i><i class="bi bi-pencil"></i></td>
+                    </tr>
+                    <tr>
+                        <td><div class="item"><i class="bi bi-lightbulb"></i><span>Lámpara LED industrial</span></div></td>
+                        <td>Infraestructura</td>
+                        <td>Centro Eléctrico</td>
+                        <td>Taller iluminación</td>
+                        <td><span class="estado ok">Solucionado</span></td>
+                        <td>15 Oct, 2023</td>
+                        <td class="acciones"><i class="bi bi-eye"></i><i class="bi bi-pencil"></i></td>
+                    </tr>
+                    <tr>
+                        <td><div class="item"><i class="bi bi-hdd"></i><span>Disco duro externo 1TB</span></div></td>
+                        <td>Tecnología</td>
+                        <td>Centro TIC</td>
+                        <td>Laboratorio 3</td>
+                        <td><span class="estado proceso">En proceso</span></td>
+                        <td>14 Oct, 2023</td>
+                        <td class="acciones"><i class="bi bi-eye"></i><i class="bi bi-pencil"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="footer-tabla">
+                <span class="info-tabla">
+                    <p>Mostrando 3 de 184 reportes detallados</p>
+                </span>
+                <div class="paginacion">
+                    <button class="activo">1</button>
+                    <button >2</button>
+                    <button>3</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
