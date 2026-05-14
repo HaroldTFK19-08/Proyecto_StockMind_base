@@ -1,0 +1,353 @@
+.bloque-principal-reportes {
+    margin-left: 250px; 
+    width: calc(100% - 250px);
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa; /* Fondo ligeramente más azulado para dar calma */
+    min-height: 100vh;
+    
+}
+
+.contenedor-falla-reporte {
+    width: 100%;
+    max-width: 900px;
+    
+}
+
+/* Contenedor principal del banner */
+.banner-notificaciones-falla {
+    background: linear-gradient(90deg, #59a341 0%, #61ab49 100%); /* Verde institucional degradado */
+    border-radius: 20px; /* Bordes muy redondeados como en la imagen */
+    padding: 30px 40px;
+    margin: 20px 0;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Contenedor interno para organizar texto y logo */
+.banner-contenido-falla {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del texto */
+.banner-texto-falla h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.banner-texto-falla p {
+    font-size: 1.1rem;
+    margin: 10px 0 0 0;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+}
+
+/* Estilo para el logo a la derecha */
+.imagen-logo-mini {
+    position: absolute;
+    right: 40px;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 100px; /* Ajusta el tamaño según tu preferencia */
+    height: auto;
+    filter: brightness(0) invert(1); /* Convierte el logo a blanco total */
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+/* Encabezado: Resaltando a Dante */
+.tarjeta-formulario-falla {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Contenedor principal del encabezado */
+.encabezado-tarjeta-falla {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #bfc0c0; /* Línea divisoria sutil */
+}
+
+/* Estilo para el título principal (Reportar Dano) */
+.encabezado-tarjeta-falla .titulo-seccion-falla {
+    font-size: 1.75rem;
+    font-weight: 9000;
+    color: #1e293b;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.encabezado-tarjeta-falla .titulo-seccion-falla i {
+    color: #ef4444; /* Rojo para indicar importancia/falla */
+}
+
+/* Estilo para el sub-badge (Nuevo Reporte para: Dante) */
+.encabezado-tarjeta-falla h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #166534;
+    background-color: #f0fdf4; /* Fondo verde muy suave */
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content; /* Para que no ocupe todo el ancho */
+    border: 1px solid #dcfce7;
+    margin: 5px 0;
+}
+
+.encabezado-tarjeta-falla h3 i {
+    color: #39A900; /* Verde SENA */
+}
+
+.encabezado-tarjeta-falla h3 strong {
+    color: #39A900;
+    font-weight: 800;
+}
+
+/* Estilo para el párrafo descriptivo */
+.encabezado-tarjeta-falla p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 600px; /* Evita que el texto se estire demasiado */
+}
+
+/* --- Grid y Campos (Diferenciación Total) --- */
+.formulario-registro-falla .grilla-datos-falla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+.campo-formulario-ancho {
+    grid-column: span 2;
+}
+
+/* Etiquetas del formulario */
+.grilla-datos-falla label {
+    display: block;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* El Contenedor de Input (Diferenciado del fondo) */
+.contenedor-entrada-icono {
+    background: #f8fafc; /* Fondo gris para diferenciar el espacio de llenado */
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efecto de Foco Dinámico */
+.contenedor-entrada-icono:focus-within {
+    background: #ffffff;
+    border-color: #38a900;
+    box-shadow: 0 10px 20px rgba(56, 169, 0, 0.08), 
+                0 0 0 4px rgba(56, 169, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.campo-entrada-texto,
+.campo-seleccion-personalizado {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+
+
+
+/* Contenedor principal de la carga */
+.area-carga-evidencia {
+    margin-top: 8px;
+    border: 2px dashed #cbd5e1; /* Borde discontinuo elegante */
+    background-color: #f8fafc; /* Fondo gris claro que contrasta con el blanco de la tarjeta */
+    border-radius: 20px;
+    padding: 35px 20px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenedor interno que actúa como botón de click */
+.contenido-zona-carga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+/* Icono de la nube subiendo */
+.contenido-zona-carga i {
+    font-size: 3.2rem;
+    color: #94a3b8;
+    margin-bottom: 12px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Bloque de textos informativos */
+.indicaciones-carga {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.indicaciones-carga strong {
+    font-size: 1.05rem;
+    color: #334155;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.indicaciones-carga span {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+
+
+/* Efecto cuando el usuario pasa el mouse sobre el área */
+.area-carga-evidencia:hover {
+    border-color: #39A900; /* Cambia al verde institucional */
+    background-color: #f0fdf4; /* Fondo verde sumamente sutil */
+    box-shadow: 0 8px 20px rgba(57, 169, 0, 0.05); /* Sombra ligera */
+}
+
+/* El icono de nube sube ligeramente en hover */
+.area-carga-evidencia:hover .contenido-zona-carga i {
+    color: #39A900;
+    transform: translateY(-5px); /* Pequena animación hacia arriba */
+}
+
+/* El texto de llamada a la acción cambia a verde */
+.area-carga-evidencia:hover .indicaciones-carga strong {
+    color: #166534; /* Un verde más oscuro para que sea legible */
+}
+
+/* Efecto al hacer clic físico (Active) */
+.area-carga-evidencia:active {
+    transform: scale(0.99); /* Ligera compresión de click */
+}
+.bloque-botones-accion {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    gap: 20px;
+}
+
+/* Botón Principal: Enviar Reporte */
+.boton-enviar-falla {
+    flex: 2; /* Ocupa más espacio para destacar como acción principal */
+    background-color: #0a2248; /* Gris oscuro elegante */
+    color: #ffffff;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.boton-enviar-falla i {
+    font-size: 1.2rem;
+}
+
+/* Efecto Hover del botón de enviar (Cambia al verde SENA con elevación) */
+.boton-enviar-falla:hover {
+    background-color: #39A900; /* Verde SENA */
+    box-shadow: 0 10px 20px rgba(57, 169, 0, 0.25); /* Sombra suave verde */
+    transform: translateY(-3px); /* Pequeno salto hacia arriba */
+}
+
+/* Efecto Click (Active) */
+.boton-enviar-falla:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(202, 118, 22, 0.2);
+}
+
+
+/* Botón Secundario: Volver */
+.boton-cancelar-reporte {
+    flex: 1; /* Ocupa menos espacio */
+    background-color: #ffffff;
+    color: #64748b; /* Texto gris */
+    border: 2px solid #e2e8f0; /* Borde suave */
+    padding: 16px 24px;
+    border-radius: 14px;
+    text-align: center;
+    text-decoration: none; /* Evita la línea azul de los enlaces */
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover del botón volver (Se oscurece el texto y el borde sutilmente) */
+.boton-cancelar-reporte:hover {
+    background-color: #f8fafc; /* Fondo grisáceo muy leve */
+    border-color: #cbd5e1;
+    color: #1e293b; /* Texto más oscuro */
+    transform: translateY(-2px);
+}
+
+.boton-cancelar-reporte:active {
+    transform: translateY(0);
+}

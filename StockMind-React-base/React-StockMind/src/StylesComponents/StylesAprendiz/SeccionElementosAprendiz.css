@@ -1,0 +1,208 @@
+/* --- Contenedor Principal --- */
+.elem-contenido-principal {
+    margin-left: 250px; /* Ajustado al ancho del aside */
+    width: calc(100% - 250px);
+    padding: 30px 50px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.elem-elementos-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.elem-titulo-seccion {
+    font-size: 1.8rem;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+.elem-subtitulo-tabla {
+    font-size: 1.1rem;
+    color: var(--texto-secundario, #64748b);
+    margin: 20px 0 10px 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- Buscador Estilizado --- */
+.elem-barra-busqueda-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.elem-input-busqueda-wrapper {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.elem-input-busqueda-wrapper i {
+    position: absolute;
+    left: 20px;
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.elem-input-busqueda-wrapper input {
+    width: 100%;
+    padding: 15px 15px 15px 55px;
+    border-radius: 15px;
+    border: 2px solid #edf2f7;
+    font-family: var(--fuente);
+    font-size: 0.95rem;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.elem-input-busqueda-wrapper input:focus {
+    border-color: var(--verde-sena, #39a900);
+    box-shadow: 0 0 0 4px rgba(57, 169, 0, 0.1);
+}
+
+.elem-boton-filtro {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 25px;
+    background-color: #fff;
+    border: 2px solid #edf2f7;
+    border-radius: 15px;
+    color: #1e293b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.elem-boton-filtro:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.elem-boton-filtro i {
+    font-size: 1.1rem;
+    color: var(--verde-sena, #39a900);
+}
+
+/* --- Diseño de Tablas --- */
+.elem-tarjeta-tabla {
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.elem-tarjeta-tabla:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    border-color: rgba(57, 169, 0, 0.2);
+}
+
+.elem-tabla-responsiva {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.elem-tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Cabecera */
+.elem-tabla thead tr {
+    background-color: #f8fafc;
+}
+
+.elem-tabla th {
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+/* Celdas */
+.elem-tabla td {
+    padding: 20px;
+    vertical-align: middle;
+    color: #334155;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f8fafc;
+}
+
+/* Columna de Elemento */
+.elem-info-elemento {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.elem-info-elemento strong {
+    font-size: 1rem;
+    color: #111827;
+}
+
+.elem-info-elemento span {
+    font-size: 0.8rem;
+    color: var(--verde-sena, #39a900);
+    font-weight: 600;
+    background: #f0fdf4;
+    padding: 2px 8px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+/* Estilo para Fecha y Hora */
+.elem-tabla td:nth-child(4), 
+.elem-tabla td:nth-child(5) {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #6366f1;
+    font-weight: 600;
+}
+
+/* --- Badge de Estado --- */
+.elem-tag-estado {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background-color: #ecfdf5;
+    color: #059669;
+    border: 1px solid #d1fae5;
+}
+
+.elem-tag-estado::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #10b981;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 8px #10b981;
+}
+
+/* --- Interacción en Filas --- */
+.elem-tabla tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.elem-tabla tbody tr:hover {
+    background-color: #fcfdfe;
+}

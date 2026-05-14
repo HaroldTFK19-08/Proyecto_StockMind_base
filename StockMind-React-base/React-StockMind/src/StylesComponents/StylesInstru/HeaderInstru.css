@@ -1,0 +1,120 @@
+.Instru-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente buscador y perfil */
+    padding: 15px 20px;
+    margin-left: 260px; /* Margen para respetar el Sidebar */
+    background-color: white; 
+    border-bottom: 1px solid #f0f0f0; 
+}
+
+/* Contenedor del buscador */
+.Instru-barra-buscador {
+    position: relative;
+    width: 600px; 
+}
+
+.Instru-input-buscador {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.Instru-input-buscador:focus {
+    border-color: #49a919; /* Verde SENA */
+}
+
+.Instru-icono-busqueda {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/* Sección derecha (Iconos y Perfil) */
+.Instru-derecha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.Instru-iconos {
+    display: flex;
+    align-items: center;
+}
+
+.Instru-iconos i, 
+.Instru-link-notificaciones i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.Instru-link-notificaciones {
+    text-decoration: none;
+}
+
+.Instru-iconos i:hover, 
+.Instru-link-notificaciones i:hover,
+.Instru-icono-ajustes:hover {
+    color: #49a919; /* Verde institucional SENA */
+}
+
+/* Bloque de Perfil */
+.Instru-perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    position: relative;
+    text-decoration: none;
+}
+
+.Instru-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.Instru-nombre {
+    font-weight: 600;
+    color: black;
+}
+
+.Instru-nombre p {
+    margin: 0; 
+}
+
+.Instru-rol {
+    color: #49a919; /* Verde institucional SENA */
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Avatar circular */
+.Instru-avatar {
+    width: 40px; 
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Instru-imagen-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

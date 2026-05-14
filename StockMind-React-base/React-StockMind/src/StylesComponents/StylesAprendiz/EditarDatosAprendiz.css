@@ -1,0 +1,182 @@
+
+/* Contenedor principal que deja espacio para el aside fijo */
+.contenido-principalEditar {
+    margin-left: 250px; /* Ancho exacto de tu aside */
+    width: calc(100% - 250px);
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center; /* Centra la tarjeta horizontalmente */
+    align-items: flex-start; /* La pega arriba para que no quede "volando" */
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+.perfil-contenedorEditar {
+    width: 100%;
+    max-width: 1000px; /* Ancho ideal para que no se vea ni pequeño ni gigante */
+    margin-top: 10px;
+}
+
+.titulo-con-vuelta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-volverEditar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #667;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px; /* Para que esté un poco encima del título */
+    transition: color 0.3s;
+}
+
+.btn-volverEditar:hover {
+    color: #008000; /* El verde de tu logo */
+}
+.btn-volverEditar i {
+    font-size: 1.2rem;
+}
+
+/* --- Tarjeta Blanca de Edición --- */
+.tarjeta-edicionEdicion {
+    background-color: var(--blanco);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+}
+
+.encabezado-tarjetaEdicion {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.encabezado-tarjetaEdicion h3 {
+    font-size: 1.3rem;
+    color: var(--texto-principal);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.encabezado-tarjetaEdicion p {
+    color: var(--texto-secundario);
+    font-size: 0.95rem;
+}
+
+/* --- Grid de Formulario --- */
+.losDatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 25px 40px; /* Espacio entre campos */
+}
+
+.dato {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dato-ancho {
+    grid-column: span 2; /* El correo ocupa todo el ancho */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--texto-principal);
+    margin-left: 4px;
+}
+
+/* --- Inputs Modernos --- */
+.input-contenedor {
+    display: flex;
+    align-items: center;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px 16px;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.input-contenedor:focus-within {
+    border-color: var(--verde-sena);
+    background-color: var(--blanco);
+    box-shadow: 0 0 0 4px rgba(73, 169, 25, 0.1);
+}
+
+.input-contenedor i {
+    color: var(--texto-secundario);
+    font-size: 1.1rem;
+}
+
+.input-field {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-family: var(--fuente);
+    font-size: 0.95rem;
+    color: var(--texto-principal);
+}
+
+/* --- Botones con Efecto Presión --- */
+.contenedor-botonesEdicion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.boton-accion-primario {
+    background-color: var(--verde-sena);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+.boton-accion-primario:hover {
+    background-color: #3d8e15;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(73, 169, 25, 0.3);
+}
+
+.boton-cancelar {
+    text-decoration: none;
+    color: var(--texto-principal);
+    background-color: #f3f4f6;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.boton-cancelar:hover {
+    background-color: #e5e7eb;
+}
+
+/* EL TRUCO DEL CLICK (Se presionan) */
+.boton-accion-primario:active, .boton-cancelar:active {
+    transform: scale(0.95);
+    transition: 0.1s;
+}

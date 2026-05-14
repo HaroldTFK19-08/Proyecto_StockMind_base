@@ -1,0 +1,261 @@
+/* Estilos específicos para el encabezado del Centro 02 */
+
+.parte-inicial.centro02 .titulo-seccion.centro02 {
+    /* Color azul muy oscuro casi negro */
+    color: #1e293b; 
+    /* Fuente tipográfica sans-serif limpia */
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    /* Tamaño grande y peso extra negrita */
+    font-size: 2.5rem; 
+    font-weight: 800;
+    /* Ajuste de espacio entre letras para que se vea compacto */
+    letter-spacing: -0.025em;
+    margin-bottom: 4px;
+}
+
+.parte-inicial.centro02 .descripcion-seccion.centro02 {
+    /* Color gris azulado para el subtítulo */
+    color: #475569;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+/* Contenedor para asegurar la alineación */
+.parte-inicial.centro02 {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+/* Contenedor Principal */
+.contenedor-principal.centro02 {
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Encabezado */
+.parte-inicial.centro02 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titulo-seccion.centro02 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+}
+
+.descripcion-seccion.centro02 {
+    color: #64748b;
+    margin: 5px 0 0 0;
+}
+
+/* Botones de Acción */
+.acciones-encabezado.centro02 {
+    display: flex;
+    gap: 12px;
+}
+
+.boton-filtro.centro02 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.boton-agregar.centro02 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1e6b0a; /* Verde SENA */
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.boton-agregar.centro02:hover {
+    background-color: #154c07;
+    transform: translateY(-1px);
+}
+
+/* Grid de Tarjetas */
+.contenedor-tarjetas.centro02 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta-ambiente.centro02 {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-ambiente.centro02:hover {
+    transform: translateY(-5px);
+}
+
+/* Parte Superior (Imagen y Estado) */
+.tarjeta-superior.centro02 {
+    position: relative;
+    height: 180px;
+}
+
+.imagen-ambiente.centro02 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.etiqueta-estado.centro02 {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.etiqueta-estado.activo.centro02 {
+    background-color: #f0fdf4;
+    color: #166534;
+}
+
+/* Cuerpo de la tarjeta */
+.tarjeta-info.centro02 {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.encabezado-info.centro02 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nombre-ambiente.centro02 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+.categoria-ambiente.centro02 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #15803d;
+    margin: 2px 0 0 0;
+}
+
+.indicador-capacidad.centro02 {
+    text-align: right;
+}
+
+.numero-capacidad.centro02 {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1;
+}
+
+.texto-capacidad.centro02 {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #64748b;
+}
+
+/* Lista de Equipos (Filas del Array Interno) */
+.detalles-equipos.centro02 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fila-equipo.centro02 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #f1f5f9;
+}
+
+.nombre-tipo-equipo.centro02 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.icono-detalle {
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+.conteo-equipo.centro02 {
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Footer / Botón */
+.tarjeta-footer.centro02 {
+    padding: 0 20px 20px 20px;
+}
+
+.boton-ver-mas.centro02 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0fdf4;
+    color: #15803d;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.boton-ver-mas.centro02:hover {
+    background-color: #dcfce7;
+}
+
+.boton-ver-mas.centro02:hover .icono-flecha {
+    transform: translateX(5px);
+}
+
+.icono-flecha {
+    transition: transform 0.2s ease;
+}

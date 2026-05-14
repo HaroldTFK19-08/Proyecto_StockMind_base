@@ -1,0 +1,277 @@
+/* CONTENEDOR PRINCIPAL */
+.repor-container {
+    padding: 20px;
+}
+
+/* TÍTULO Y SECCIÓN SUPERIOR */
+.repor-titulo-seccion {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.repor-h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.repor-p-descripcion {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.repor-btn-PDF {
+    background-color: #008A37;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 170px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.repor-btn-PDF:hover {
+    background-color: #006b2a;
+}
+
+/* GRID DE RESUMEN */
+.repor-resumen-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* TARJETA */
+.card-resumen-repor {
+    flex: 1 1 220px;
+    max-width: 260px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card-resumen-repor:hover {
+    transform: translateY(-5px);
+}
+
+/* ICONOS EN CARDS */
+.repor-icono {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.repor-icono.naranja { background: #fff7ed; color: #ea580c; }
+.repor-icono.azul { background: #eff6ff; color: #2563eb; }
+.repor-icono.verde { background: #dcfce7; color: #166534; }
+.repor-icono.gris { background: #f3f4f6; color: #374151; }
+
+/* CONTENIDO DE CARDS */
+.repor-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.repor-h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.repor-p {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* BADGES */
+.repor-badge {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.repor-badge.alerta { background: #fee2e2; color: #b91c1c; }
+.repor-badge.proceso { background: #dbeafe; color: #1d4ed8; }
+.repor-badge.ok { background: #dcfce7; color: #166534; }
+.repor-badge.neutro { background: #e5e7eb; color: #374151; }
+
+/* SECCIÓN TABLA */
+.repor-tabla-seccion {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.repor-header-tabla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de filtros */
+.repor-filtros {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+/* Estilo del botón basado en image_6500c0.png */
+.repor-btn-filtro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre ícono y texto */
+    
+    background-color: #289201; /* Verde brillante exacto */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 15px; /* Bordes redondeados pronunciados */
+    
+    font-size: 15px;
+    font-weight: 700; /* Texto en negrita como la imagen */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.repor-btn-filtro:hover {
+    background-color: #268a00;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Ajuste para los íconos dentro del botón */
+.repor-btn-filtro i {
+    font-size: 18px;
+    -webkit-text-stroke: 0.5px white; /* Para darle un toque más grueso al ícono si es necesario */
+}
+
+/* Link de historial */
+.repor-link-historial {
+    color: #166534;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 15px;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.repor-link-historial:hover {
+    border-bottom: 1px solid #166534;
+}
+
+/* ESTILOS TABLA */
+.repor-tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.repor-thead {
+    background: #f9fafb;
+}
+
+.repor-th, .repor-td {
+    padding: 12px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.repor-tr {
+    border-top: 1px solid #eee;
+}
+
+/* ELEMENTOS DENTRO DE LA TABLA */
+.repor-item-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.repor-i {
+    background: #f3f4f6;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.repor-estado {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.repor-estado.pendiente { background: #fee2e2; color: #b91c1c; }
+.repor-estado.proceso { background: #dbeafe; color: #1d4ed8; }
+.repor-estado.ok { background: #dcfce7; color: #166534; }
+
+.repor-acciones .repor-btn-accion {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.repor-acciones .repor-btn-accion:hover {
+    color: #166534;
+}
+
+/* FOOTER Y PAGINACIÓN */
+.repor-footer-tabla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.repor-info-paginacion {
+    font-size: 11px;
+    color: #727272;
+}
+
+.repor-paginacion-btns {
+    display: flex;
+    gap: 5px;
+}
+
+.repor-btn-pag {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #f3f4f6;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.repor-btn-pag.activo-repor {
+    background: #166534;
+    color: #fff;
+}

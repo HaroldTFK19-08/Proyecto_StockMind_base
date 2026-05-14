@@ -1,0 +1,205 @@
+/* ===== CARDS USUARIOS ===== */
+
+.cards-usu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* TARJETA */
+
+.card-usu {
+    flex: 1 1 240px;
+    background: white;
+    border-radius: 24px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+
+.card-usu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* CONTENIDO SUPERIOR */
+
+.top-card-usu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TITULO */
+
+.title-usu {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #666;
+    font-weight: 700;
+}
+
+/* ICONOS */
+
+.icon-card-usu {
+    width: 55px;
+    height: 55px;
+    border-radius: 16px;
+    background: #eef8ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #39b600;
+    font-size: 24px;
+}
+
+/* NUMERO */
+
+.number-usu {
+    font-size: 52px;
+    color: #1d1d1d;
+}
+
+/* TEXTO ESTADISTICA */
+
+.stats-usu {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2f9400;
+}
+
+/* ===== VARIANTES DE CARD ===== */
+
+/* CARD ROSADA (Cuenta-dantes) */
+
+.card-pink-usu .stats-usu {
+    color: #d81b7d;
+}
+
+.icon-pink-usu {
+    background: #ffe8f2;
+    color: #d81b7d;
+}
+
+/* CARD AZUL (Aprendices) */
+
+.card-blue-usu .stats-usu {
+    color: #1877f2;
+}
+
+.icon-blue-usu {
+    background: #e8f1ff;
+    color: #1877f2;
+}
+
+/* ===== TABLA DE USUARIOS ===== */
+
+.tabla-container-usu {
+    background: white;
+    border-radius: 28px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    overflow-x: auto;
+}
+
+.tabla-usu {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thead-usu .th-usu {
+    text-align: left;
+    padding-bottom: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.tbody-usu .td-usu {
+    padding: 24px 0;
+    border-top: 1px solid #ececec;
+}
+
+/* INFORMACIÓN DEL USUARIO */
+
+.usuario-info-usu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.img-usu,
+.avatar-usu {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-usu {
+    background: #ff5db1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.name-usu {
+    font-size: 16px;
+    color: #1d1d1d;
+    margin: 0;
+}
+
+.email-usu {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ROLES Y BADGES */
+
+.roles-usu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge-usu {
+    background: #c7efb8;
+    color: #2f6e18;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.centro-usu {
+    font-size: 14px;
+    color: #444;
+}
+
+/* ESTADOS */
+
+.estado-usu {
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.activo-usu {
+    background: #eef8ea;
+    color: #2f9400;
+}
+
+.inactivo-usu {
+    background: #efefef;
+    color: #666;
+}

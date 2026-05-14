@@ -1,0 +1,142 @@
+/* contactos */
+.seccion-contacto {
+    padding: 120px 10%;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+/* LADO IZQUIERDO */
+.info-principal {
+    flex: 1;
+}
+
+.titulo-verde {
+    color: #39A900;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.info-principal h2 {
+    font-size: 3.5rem;
+    color: #0f172a;
+    margin: 20px 0;
+    line-height: 1;
+}
+
+/* Color sólido y profesional sin prefijos -webkit */
+.texto-resaltado {
+    color: #2d8500; /* Un verde un poco más oscuro y serio */
+    font-weight: 800;
+    display: inline;
+}
+
+/* Ajuste para el título principal */
+.info-principal h2 {
+    font-size: 3.5rem;
+    color: #0f172a; /* Azul muy oscuro para el texto normal */
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.lineas-contacto {
+    margin-top: 50px;
+}
+
+.item-contacto {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f5f9; /* Solo una línea abajo, no una caja */
+}
+
+.item-contacto i {
+    font-size: 2rem;
+    color: #39A900;
+}
+
+.detalles span {
+    display: block;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.detalles p {
+    font-size: 1.1rem;
+    color: #334155;
+    font-weight: 500;
+}
+
+/* LADO DERECHO (REDES) */
+.social-side {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* Un detalle visual circular de fondo para que no se vea vacío */
+.circulo-decorativo {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(57, 169, 0, 0.05) 0%, rgba(255,255,255,0) 70%);
+    z-index: 1;
+}
+
+.redes {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+
+.redes p {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #1e293b;
+    font-size: 1.2rem;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.enlaces a i {
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.enlaces a:hover {
+    color: #39A900;
+    transform: translateX(10px); /* Efecto de desplazamiento */
+}
+
+.enlaces a:hover i {
+    transform: scale(1.2);
+}

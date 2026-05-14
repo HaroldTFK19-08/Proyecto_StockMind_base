@@ -1,0 +1,63 @@
+/* Sidebar Principal */
+.aside-admin {
+    width: 250px;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    text-align: left;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Opcional: para dar profundidad */
+}
+
+/* Contenedor del Logo */
+.izquierda-admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lista de navegación */
+.nav-admin ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos de los enlaces (NavLink) */
+.nav-item-admin {
+    text-decoration: none;
+    color: black;
+    display: block; /* Para que el enlace ocupe todo el espacio */
+}
+
+/* Estilos de los items de la lista */
+.nav-item-admin li {
+    width: 85%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease; /* Suaviza la transición del hover */
+}
+
+/* Efecto Hover */
+.nav-item-admin:hover li {
+    border-left: 5px solid rgb(1, 87, 24);
+    background-color: rgb(236, 255, 233);
+    cursor: pointer;
+}
+
+/* Iconos */
+.nav-item-admin i {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+/* Clase de estado activo (asignada por NavLink) */
+.nav-item-admin.selected li {
+    border-left: 5px solid rgb(1, 87, 24);
+    background-color: rgb(236, 255, 233);
+    font-weight: bold;
+}

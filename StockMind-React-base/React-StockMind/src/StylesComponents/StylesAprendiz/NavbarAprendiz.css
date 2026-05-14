@@ -1,0 +1,57 @@
+aside {
+    width: 250px;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    text-align: left;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+.izquierda {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para el NavLink (el contenedor del li) */
+.nav a {
+    text-decoration: none;
+    color: black;
+    display: block; /* Para que ocupe todo el ancho */
+}
+
+.nav li {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 20px; /* Reduje un poco el margen para que quepan mejor */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.nav i {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+/* ESTADO HOVER */
+.nav a:hover li {
+    border-left: 5px solid #015618;
+    background-color: #ecffe9;
+    cursor: pointer;
+}
+
+/* ESTADO SELECCIONADO (Active) */
+.nav a.selected li {
+    border-left: 5px solid rgb(1, 87, 24);
+    background-color: rgb(236, 255, 233);
+    font-weight: 600; /* Un toque de negrita para resaltar */
+}

@@ -1,0 +1,96 @@
+.cabecera-superior-usuario {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    
+    /* Para que fluya normal con la página y no flote sobre nada */
+    position: relative; 
+    background-color: rgba(255, 255, 255, 0.299) ;
+    
+    padding: 20px 40px;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    z-index: 100;
+    
+}
+
+.seccion-derecha-cabecera {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Iconos alineaditos */
+.iconos-notificaciones-perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* La campana gris con el punto rojo */
+.campana-contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notificacion-punto {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+/* El perfil a la derecha */
+.mini-perfil-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.informacion-basica-usuario {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.nombre-perfil-principal {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1e293b;
+}
+
+.nombre-real-usuario {
+    color: #28a745;
+    font-weight: 600;
+}
+
+/* Foto circular pequeña */
+.avatar-aprendiz-vista {
+    width: 45px;
+    height: 45px;
+    background-color: #e2e8f0;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-logoAprendiz {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

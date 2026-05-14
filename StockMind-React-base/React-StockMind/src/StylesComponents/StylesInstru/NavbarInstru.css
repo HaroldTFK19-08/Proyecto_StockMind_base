@@ -1,0 +1,66 @@
+/* Sidebar Principal */
+.aside-instructor {
+    width: 250px;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    text-align: left;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+/* Contenedor del Logo */
+.izquierda-instructor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lista de navegación */
+.nav-instructor ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos de los enlaces (NavLink) */
+.nav-item-instructor {
+    text-decoration: none;
+    color: #1a1a1a;
+    display: block;
+}
+
+/* Estilos de los items de la lista */
+.nav-item-instructor li {
+    width: 85%;
+    padding: 12px 10px;
+    margin: 10px 15px; /* Ajustado para mejor centrado lateral */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-left: 5px solid transparent; /* Evita saltos visuales al activar */
+}
+
+/* Efecto Hover */
+.nav-item-instructor:hover li {
+    border-left: 5px solid #49a919; /* Verde SENA */
+    background-color: #f0fdf4; /* Verde muy claro */
+    cursor: pointer;
+    color: #49a919;
+}
+
+/* Iconos */
+.nav-item-instructor i {
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+/* Clase de estado activo (asignada por NavLink) */
+.nav-item-instructor.selected li {
+    border-left: 5px solid #49a919;
+    background-color: #ecffe9;
+    font-weight: bold;
+    color: #49a919;
+}

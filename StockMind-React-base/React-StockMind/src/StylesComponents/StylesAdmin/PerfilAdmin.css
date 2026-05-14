@@ -1,0 +1,320 @@
+/* --- Estructura Principal --- */
+.p-admin-contenedor1 {
+    display: flex;
+    margin-left: 250px; /* Espacio para el Sidebar */
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+.articleP-admin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* --- Layout de Información y Columnas --- */
+.p-admin-seccion_info_perfil {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.p-admin-areaInfo {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Columna izquierda más ancha */
+    gap: 25px;
+    align-items: start;
+}
+
+/* Contenedores verticales para alinear seguridad y preferencias */
+.p-admin-columna-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* --- Tarjetas (Cards) Globales --- */
+.p-admin-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ajuste de simetría para cuadros inferiores */
+.p-admin-card-inferior {
+    min-height: 250px; /* Asegura que Seguridad y Preferencias midan lo mismo */
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Cabecera de Perfil --- */
+.p-admin-perfil_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-admin-perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.p-admin-foto_perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(/IMG/retrato-mujer-feliz-tableta-digital_329181-11681.avif);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #f1f5f9;
+}
+
+.p-admin-badge {
+    background: #e1f3e8;
+    color: #1f7a3a;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* --- Información Personal --- */
+.p-admin-info_personal h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+.p-admin-personal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.p-admin-personal h4 {
+    font-size: 0.7rem;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.p-admin-personal p {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+/* --- Seguridad --- */
+.p-admin-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.p-admin-btn-seguridad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 14px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.p-admin-btn-password { background: #f0fdf4; color: #16a34a; border: 1px solid #dcfce7; }
+.p-admin-btn-logout { background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; }
+.p-admin-btn-delete { background: #fff1f2; color: #e11d48; border: 1px solid #ffe4e6; }
+
+.p-admin-btn-seguridad:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+
+/* --- Preferencias (Toggle Switches) --- */
+.p-admin-opcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.p-admin-opcion:last-child { border: none; }
+
+.p-admin-opcion input[type="checkbox"] {
+    position: relative;
+    width: 44px;
+    height: 22px;
+    appearance: none;
+    background: #e2e8f0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.p-admin-opcion input[type="checkbox"]:checked { background: #1f7d35; }
+
+.p-admin-opcion input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.p-admin-opcion input[type="checkbox"]:checked::before { left: 24px; }
+
+/* --- Actividad Reciente --- */
+.p-admin-actividad-item {
+    background-color: #f8fafc;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #e2e8f0;
+}
+/* El contenedor padre ya no tiene scroll, solo el padding y diseño base */
+.p-admin-actividad {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    height: 420px; /* Altura fija para la tarjeta completa */
+}
+
+.p-admin-actividad h2 {
+    margin-bottom: 15px; /* Espacio fijo bajo el título */
+    flex-shrink: 0; /* Evita que el título se comprima */
+}
+
+/* --- ESTE ES EL CONTENEDOR QUE SE MUEVE --- */
+.p-admin-scroll-v {
+    overflow-y: auto;
+    flex-grow: 1; /* Ocupa todo el espacio restante de la card */
+    padding-right: 8px; /* Espacio para la barra */
+}
+
+/* --- Estilos del Scrollbar (Elegante como image_e9027f.png) --- */
+.p-admin-scroll-v::-webkit-scrollbar {
+    width: 6px;
+}
+
+.p-admin-scroll-v::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.p-admin-scroll-v::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 10px;
+}
+
+.p-admin-scroll-v::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Estilo para Firefox */
+.p-admin-scroll-v {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+}
+
+/* Opcional: Para Firefox */
+.p-admin-actividad {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+}
+
+
+.p-admin-actividad-item h4 { font-size: 0.9rem; margin: 0 0 5px 0; color: #1e293b; }
+.p-admin-actividad-item p { font-size: 0.85rem; margin: 0; color: #64748b; }
+.p-admin-actividad-item span { font-size: 0.75rem; color: #94a3b8; }
+
+/* --- Tablas --- */
+.p-admin-contenedor-tabla {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 25px;
+}
+
+.p-admin-card_tabla_card {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+}
+
+.p-admin-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.p-admin-tabla th {
+    background-color: #f8fafc;
+    padding: 15px;
+    text-align: left;
+    color: #64748b;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.p-admin-tabla td {
+    padding: 15px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.9rem;
+}
+
+.p-admin-estado {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.p-admin-disponible { background: #e1f3e8; color: #1f7a3a; }
+.p-admin-uso { background: #fef3c7; color: #92400e; }
+
+.p-admin-acciones {
+    display: flex;
+    gap: 15px;
+    color: #94a3b8;
+}
+
+.p-admin-acciones i:hover { color: #1f7d35; cursor: pointer; }
+
+/* Botón Editar */
+.p-admin-btn-editar {
+    border: none;
+    background-color: #1f7d35;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

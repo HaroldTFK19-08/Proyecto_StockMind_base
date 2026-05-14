@@ -1,0 +1,127 @@
+/* CONTENEDOR PRINCIPAL */
+.histo-repor-main {
+    background-color: #f9fafb; /* Un fondo sutil para que resalten los contenedores blancos */
+    min-height: 100vh;
+}
+
+.histo-repor-container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* TITULO Y ESTADÍSTICAS */
+.histo-repor-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.histo-repor-stats {
+    background: #e6fff3;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; /* Alineación vertical para el texto y el número */
+    align-items: center;
+    min-width: 150px;
+}
+
+.histo-repor-stats p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #065f46;
+}
+
+.histo-repor-stats h2 {
+    margin: 0;
+    font-size: 32px;
+    color: #49a919; /* Usando tu verde SENA */
+}
+
+/* FILTROS */
+.histo-repor-filters {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+}
+
+.histo-repor-filter-btn {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background: #e5e7eb;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.histo-repor-filter-btn:hover {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.histo-repor-btn-export {
+    background: #49a919; /* Verde SENA */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.histo-repor-btn-export:hover {
+    background: #3d8c15;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* TABLA */
+.histo-repor-table-container {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 1200px;
+    margin: auto;
+}
+
+.histo-repor-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.histo-repor-table th, 
+.histo-repor-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.histo-repor-table th {
+    color: #777;
+    font-weight: 600;
+    background-color: #fcfcfc;
+}
+
+/* ESTADOS */
+.histo-repor-estado {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.histo-repor-critico { background: #fde2e2; color: #d9534f; }
+.histo-repor-revision { background: #e0e7ff; color: #4f46e5; }
+.histo-repor-pendiente { background: #fef3c7; color: #d97706; } /* Amarillo para pendientes */
+.histo-repor-completado { background: #d1fae5; color: #059669; }
+.histo-repor-urgente { background: #fee2e2; color: #dc2626; }

@@ -1,0 +1,66 @@
+.seccion-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ocupa casi toda la pantalla inicial */
+    padding: 100px 5%;
+    background-color: #ffffff;
+}
+
+.inicio-contenedor{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+.inicio-texto{
+    flex: 1;
+}
+
+.titulo-principal {
+    font-size: 5.5rem; /* Tamano grande e impactante */
+    font-weight: 900;
+    color: #1d1c1c; /* Verde SENA */
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.descripcion-inicio {
+    font-size: 1.1rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+.btn-hero-primary {
+    background-color: #39A900;
+    color: white;
+}
+
+.btn-hero-secondary {
+    border: 2px solid #39A900;
+    color: #39A900;
+}
+
+.btn-hero-primary:hover {
+    background-color: #2d8500;
+    transform: translateY(-3px);
+}
+
+.btn-hero-secondary:hover {
+    background-color: #f0fdf4;
+    transform: translateY(-3px);
+}
+
+.imagen-inicio{
+    flex: 1;
+}
+
+.imagen-inicio img {
+    width: 100%;
+    height: auto;
+    max-width: 650px;
+    border-radius: 30px; /* Bordes redondeados modernos */
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff; /* Efecto suave */
+}

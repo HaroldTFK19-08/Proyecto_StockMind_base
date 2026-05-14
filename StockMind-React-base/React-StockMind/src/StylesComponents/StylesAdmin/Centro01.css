@@ -1,0 +1,260 @@
+/* Contenedor Principal */
+.main-centro01 {
+    padding: 20px;
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Contenedor principal del encabezado */
+.parte-inicial-centro01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Título principal (Más grueso y oscuro) */
+.parte-inicial-centro01 h1 {
+    color: #1a2537; /* Azul muy oscuro de la imagen */
+    font-size: 2.8rem;
+    font-weight: 900; /* Máximo grosor */
+    margin: 0;
+    letter-spacing: -0.03em; /* Letras más juntas como en el diseño */
+}
+
+/* Subtítulo */
+.parte-inicial-centro01 p {
+    color: #64748b; /* Gris azulado suave */
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+/* Contenedor de botones */
+.parte-inicial-centro01 div:last-child {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Botón Filtro (Estilo blanco/bordeado) */
+.boton-filtro-centro01 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+    padding: 10px 25px;
+    border-radius: 50px; /* Estilo píldora */
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.boton-filtro-centro01:hover {
+    background-color: #f8fafc;
+}
+
+/* Botón Agregar (Verde SENA) */
+.boton-agregar-centro01 {
+    background-color: #1e6b0a; /* Verde exacto de la imagen */
+    color: #ffffff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 50px; /* Estilo píldora */
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton-agregar-centro01:hover {
+    background-color: #154c07;
+}
+
+/* Ajuste para el icono dentro del botón */
+.icono-boton {
+    font-size: 1.3rem;
+    color: #22c55e; /* Verde brillante para el icono de filtro */
+}
+
+
+
+
+/* Grid de Tarjetas */
+.tarjetas-centro01 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo de la Tarjeta */
+.tarjeta-centro01 {
+    width: 100%;
+    max-width: 340px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabecera: Imagen y Estado */
+.tarjeta-cabecera-centro01 {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.tarjeta-imagen-centro01 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estados Dinámicos */
+.estado-centro01 {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.activo-centro01 {
+    background-color: #f0fdf4;
+    color: #166534;
+}
+
+.mantenimiento-centro01 {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+/* Cuerpo de la Tarjeta */
+.tarjeta-cuerpo-centro01 {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.fila-titulo-centro01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.titulo-ambiente-centro01 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 4px 0;
+}
+
+.subtitulo-ambiente-centro01 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #15803d;
+    margin: 0;
+}
+
+.grupo-capacidad-centro01 {
+    text-align: right;
+}
+
+.capacidad-numero-centro01 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1;
+}
+
+.capacidad-etiqueta-centro01 {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.05em;
+}
+
+/* Lista de Equipos */
+.lista-equipos-centro01 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-equipo-centro01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #f1f5f9;
+}
+
+.info-equipo-centro01 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.cantidad-equipo-centro01 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Pie y Botón de Acción */
+.tarjeta-pie-centro01 {
+    padding: 0 20px 20px 20px;
+}
+
+.boton-accion-centro01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0fdf4;
+    color: #15803d;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.boton-accion-centro01:hover {
+    background-color: #dcfce7;
+}
+
+.boton-accion-centro01:hover .flecha {
+    transform: translateX(4px);
+}
+
+.flecha {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}

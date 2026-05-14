@@ -1,0 +1,221 @@
+.notiadmin-contenedor-notificaciones {
+    width: 100%;
+}
+
+/* TITULO */
+
+.notiadmin-titulo h1 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.notiadmin-titulo p {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* SUBTITULOS */
+
+.notiadmin-grupo {
+    margin-bottom: 35px;
+}
+
+.notiadmin-subtitulo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #1f2937;
+}
+
+.notiadmin-circulo {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #166534; /* Verde SENA */
+}
+
+.notiadmin-gris {
+    border-color: #9ca3af;
+}
+
+/* TARJETAS */
+
+.notiadmin-notificacion {
+    position: relative;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    overflow: hidden; /* Asegura que el pseudo-elemento no se salga */
+}
+
+.notiadmin-notificacion::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 14px 0 0 14px;
+}
+
+.notiadmin-danger::before {
+    background: #dc2626;
+}
+
+.notiadmin-success::before {
+    background: #15803d;
+}
+
+.notiadmin-warning::before {
+    background: #92400e;
+}
+
+.notiadmin-neutral::before {
+    background: #94a3b8;
+}
+
+/* ICONOS */
+
+.notiadmin-icono {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.notiadmin-danger-icon {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.notiadmin-success-icon {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.notiadmin-warning-icon {
+    background: #dbeafe;
+    color: #7c2d12;
+}
+
+.notiadmin-neutral-icon {
+    background: #e2e8f0;
+    color: #475569;
+}
+
+/* CONTENIDO */
+
+.notiadmin-contenido {
+    flex: 1;
+}
+
+.notiadmin-contenido h2 {
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.notiadmin-contenido p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.notiadmin-contenido strong {
+    color: #111827;
+}
+
+/* BOTONES */
+.notiadmin-button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes más redondeados y modernos */
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.notiadmin-button {
+    background-color: #49a919; 
+    color: white;
+}
+
+.notiadmin-button:hover {
+    background-color: #3d8c15;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(73, 169, 25, 0.2);
+}
+.notiadmin-button:active {
+    transform: translateY(0);
+}
+
+.notiadmin-btn-secundario {
+    background-color: #ffffff;
+    color: #475569;
+    border: 1.5px solid #e2e8f0;
+    box-shadow: none;
+}
+.notiadmin-btn-secundario i {
+    color: #49a919; /* El icono en verde resalta la acción */
+    font-size: 1.1rem;
+}
+
+.notiadmin-btn-secundario:hover {
+    background-color: #f8fafc;
+    border-color: #49a919;
+    color: #49a919;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+/* Ajuste específico para el icono de descarga si usas Bootstrap Icons */
+.notiadmin-btn-secundario .bi-download {
+    transition: transform 0.3s ease;
+}
+
+.notiadmin-btn-secundario:hover .bi-download {
+    transform: translateY(2px); /* Efecto de rebote hacia abajo al descargar */
+}
+
+/* HORA */
+
+.notiadmin-hora {
+    color: #9ca3af;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+    .notiadmin-notificacion {
+        flex-direction: column;
+    }
+
+    .notiadmin-hora {
+        margin-top: 10px;
+    }
+
+    .notiadmin-titulo h1 {
+        font-size: 26px;
+    }
+
+    .notiadmin-contenido h2 {
+        font-size: 18px;
+    }
+}

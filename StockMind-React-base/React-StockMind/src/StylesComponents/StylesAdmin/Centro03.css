@@ -1,0 +1,250 @@
+/* --- Contenedor Principal --- */
+.main-centro03 {
+    padding: 20px 40px;
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Contenedor Principal del Encabezado */
+.parte-inicial-centro03 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alineado arriba para coincidir con la imagen */
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Títulos y Textos */
+.parte-inicial-centro03 h1 {
+    font-size: 2.5rem; /* Tamaño grande como se ve en la captura */
+    font-weight: 800;    /* Extra bold */
+    color: #1e293b;    /* Azul muy oscuro/grisáceo */
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.parte-inicial-centro03 p {
+    font-size: 1.1rem;
+    color: #64748b;    /* Gris azulado para el subtítulo */
+    margin-top: 5px;
+}
+
+/* Contenedor de los botones a la derecha */
+.parte-inicial-centro03 div:last-child {
+    display: flex;
+    gap: 15px; /* Espacio entre Filtro y Agregar */
+    align-items: center;
+}
+
+/* Botón de Filtro (Blanco con borde) */
+.boton-filtro-centro03 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+    padding: 10px 24px;
+    border-radius: 50px; /* Forma de píldora */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.boton-filtro-centro03:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.icono-boton {
+    font-size: 1.2rem;
+    color: #22c55e; /* Verde del icono de filtro */
+}
+
+/* Botón de Agregar Ambiente (Verde Sólido) */
+.boton-agregar-centro03 {
+    background-color: #1a630a; /* Verde SENA exacto de la foto */
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton-agregar-centro03:hover {
+    background-color: #145208; /* Verde un poco más oscuro al pasar el mouse */
+}
+
+/* --- Grid de Tarjetas --- */
+.seccion-tarjetas-centro03 {
+    width: 100%;
+}
+
+.tarjetas-centro03 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.tarjeta-centro03 {
+    width: 100%;
+    max-width: 340px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Cabecera de Tarjeta --- */
+.tarjeta-cabecera-centro03 {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.tarjeta-imagen-centro03 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Estados --- */
+.estado-centro03 {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.activo-centro03 {
+    background-color: #f0fdf4;
+    color: #166534;
+}
+
+.mantenimiento-centro03 {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+/* --- Cuerpo --- */
+.tarjeta-cuerpo-centro03 {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.fila-titulo-centro03 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.titulo-ambiente-centro03 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 4px 0;
+}
+
+.subtitulo-ambiente-centro03 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #15803d;
+    margin: 0;
+}
+
+.grupo-capacidad-centro03 {
+    text-align: right;
+}
+
+.capacidad-numero-centro03 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1;
+}
+
+.capacidad-etiqueta-centro03 {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #64748b;
+}
+
+/* --- Equipos --- */
+.lista-equipos-centro03 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-equipo-centro03 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #f1f5f9;
+}
+
+.info-equipo-centro03 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nombre-equipo-centro03 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.cantidad-equipo-centro03 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* --- Pie de Tarjeta --- */
+.tarjeta-pie-centro03 {
+    padding: 0 20px 20px 20px;
+}
+
+.boton-accion-centro03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0fdf4;
+    color: #15803d;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.boton-accion-centro03:hover {
+    background-color: #dcfce7;
+}
+
+.boton-accion-centro03:hover .flecha {
+    transform: translateX(4px);
+}

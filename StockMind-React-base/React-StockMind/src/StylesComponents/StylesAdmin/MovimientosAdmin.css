@@ -1,0 +1,234 @@
+/* --- Contenedor Principal (Layout) --- */
+.movimiento-main {
+    margin-left: 250px; /* Espacio para el sidebar */
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.movimiento-article {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* --- SECCIÓN DE CARTAS (RESUMEN) --- */
+/* --- Contenedor de las Tarjetas --- */
+.movimiento-cartas-contenedor {
+    display: grid;
+    /* Esto crea 4 columnas iguales que se ajustan solas */
+    grid-template-columns: repeat(4, 1fr); 
+    /* El espacio entre tarjetas (puedes subirlo a 25px o 30px si prefieres más aire) */
+    gap: 20px; 
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* --- Tarjeta Individual --- */
+.movimiento-card {
+    background: #ffffff;
+    border-radius: 20px; /* Bordes redondeados de la imagen */
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    
+    /* Sombra suave idéntica a la imagen */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    
+    /* El borde verde superior */
+    border-top: 8px solid #39b600; 
+    
+    transition: transform 0.3s ease;
+}
+
+/* Micro-interacción al pasar el mouse */
+.movimiento-card:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Estilos de Texto Internos --- */
+
+/* Títulos en mayúsculas y gris */
+.movimiento-card h3 {
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* El número grande en negro */
+.movimiento-numero-resaltado {
+    font-size: 48px; /* Tamaño grande según la imagen */
+    font-weight: 700;
+    color: #1e1e1e;
+    margin: 15px 0;
+}
+
+/* El texto de abajo en gris suave */
+.movimiento-card p:last-child {
+    font-size: 13px;
+    color: #000000;
+    margin: 0;
+}
+
+
+/* --- SECCIÓN INFERIOR (FORM + TABLAS) --- */
+.movimiento-seccion-info {
+    display: grid;
+    grid-template-columns: 400px 1fr; /* Formulario fijo, tablas flexibles */
+    gap: 30px;
+    align-items: start;
+}
+
+/* --- FORMULARIO --- */
+.movimiento-formulario-contenedor {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.movimiento-titulo-form h2 {
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.movimiento-titulo-form p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.movimiento-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movimiento-grupo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.movimiento-grupo-form label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #444;
+}
+
+.movimiento-grupo-form input,
+.movimiento-grupo-form select,
+.movimiento-grupo-form textarea {
+    border: 1px solid #edf2f7;
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.movimiento-grupo-form input:focus,
+.movimiento-grupo-form select:focus {
+    border-color: #39b600;
+    background: #fff;
+}
+
+.movimiento-grupo-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.movimiento-btn-guardar {
+    margin-top: 10px;
+    border: none;
+    background: #39b600;
+    color: white;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.movimiento-btn-guardar:hover {
+    background: #2f9400;
+    box-shadow: 0 4px 12px rgba(57, 182, 0, 0.2);
+}
+
+/* --- TABLAS --- */
+.movimiento-tablas-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.movimiento-entradas-tabla,
+.movimiento-salidas-tabla {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.movimiento-header-tabla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.movimiento-header-tabla h3 {
+    font-size: 18px;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.movimiento-btn-ver {
+    border: none;
+    background: #eaf8e4;
+    color: #39b600;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.movimiento-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.movimiento-table th {
+    text-align: left;
+    padding: 12px;
+    font-size: 13px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f8fafc;
+}
+
+.movimiento-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+    color: #334155;
+}
+
+.movimiento-table tbody tr:hover {
+    background: #f8fafc;
+}
